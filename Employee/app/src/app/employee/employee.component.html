@@ -1,0 +1,65 @@
+
+
+
+<div class="container tablecontainer">
+    <div class="container container-fluid ">
+        <div>
+            <div class="btn-group">
+                <a [routerLink]="['../create-employee']" class="btn btn-primary"> <i class="fa-solid fa-user-plus"></i> Add
+                    Employee </a>
+            </div>
+              <div class="form-inline btn-group search">
+
+                <input type="search" class="form-control rounded" [(ngModel)]="searchValue" (input)="Search(searchValue)" placeholder="Search"
+    
+                    aria-label="Search" aria-describedby="search-addon" />
+    
+            </div>
+              
+        </div>
+        <br>
+        <div class="tableclass">
+          <table class="table table-striped table-bordered">
+            <thead>
+                <tr class="tenacioustable">
+                    
+                    <th>Id</th>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Department</th>
+                    <th>Designation</th>
+                  
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tenacioustable" *ngFor="let item of data | paginate :{itemsPerPage:5, currentPage:page} ">
+                    
+                    <td>{{item.id}}</td>
+                    <td>{{item.firstname}}</td>
+                    <td>{{item.lastname}}</td>
+                    <td>{{item.department_Name}}</td>
+                    <td>{{item.designation_Name}}</td>
+                   
+                    
+                    <td>
+                        <a [routerLink]="['../edit-employee',item.id]" class="btn btn-primary" ><i
+                                class="fa-solid fa-pen-to-square"  title="Edit"></i></a><div class="space"></div>
+                        <a [routerLink]="['../employee-profile',item.id]" class="btn btn-success" target="_self"><i
+                                class="fa-solid fa-circle-info" title="Details"></i></a><div class="space"></div>
+                        <button  class="btn btn-danger" (click)="deleteEmployee(item.id)" ><i class="fa-solid fa-user-slash" data-toggle="modal" data-target="#Mymodal"title="Disable"></i></button> 
+                    </td>
+                </tr>
+            </tbody>    
+         </table>
+        </div>
+
+    
+    <ng-container *ngIf="( data ) as result">
+        <p class="no-records" *ngIf="result.length == 0">No Records found</p>
+        <pagination-controls class="paginate" *ngIf="result.length != 0" (pageChange)="page = $event"></pagination-controls>  
+      </ng-container>
+
+      
+      
+</div>

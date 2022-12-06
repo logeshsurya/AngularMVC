@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@angular/animations": "^15.0.1",
+    "@angular/cdk": "^15.0.0",
+    "@angular/material": "^15.0.0",
+    "bootstrap": "^5.2.3",
+    "font-awesome": "^4.7.0"
+  }
+}

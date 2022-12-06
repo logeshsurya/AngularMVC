@@ -1,0 +1,140 @@
+
+
+<div class="container table-box">
+
+    <form class="border-box" #myForm="ngForm" (ngSubmit)="OnSubmit()">
+
+        <span class="border-box-tip"><b>Add Employee</b></span>
+        <div class="employee row">
+            <div class="col-auto">
+                <label class="col-form-label">Firstname</label>
+                <input type="text" #firstname="ngModel" required pattern="^[a-zA-Z][a-zA-Z\s]{0,20}[a-zA-Z\s]$"
+                    class="form-control" name="firstName" [(ngModel)]="Employee.firstname">
+                <div *ngIf="firstname.touched && firstname.errors?.['required']" class="text-danger ">
+                    Firstname is Required!
+                </div>
+                <div *ngIf="firstname.touched && firstname.errors?.['pattern']" class="text-danger input">
+                    Should not contain Numbers and special characters!
+                </div>
+            </div>
+
+            <div class="col-auto">
+                <label class="col-form-label">Lastname</label>
+                <input type="text" #lastname="ngModel" required pattern="[A-Za-z\s]+$" class="form-control"
+                    name="Lastname" [(ngModel)]="Employee.lastname">
+                <div *ngIf="lastname.touched && lastname.errors?.['required']" class="text-danger">
+                    Lastname is Required!
+                </div>
+                <div *ngIf="lastname.touched && lastname.errors?.['pattern']" class="text-danger input">
+                    Should not contain Numbers and special characters!
+                </div>
+            </div>
+        </div>
+
+
+        <div class="employee row">
+
+            <div class="col-auto">
+                <label for="datetime" class="col-form-label">Date of Birth</label>
+                <input type="date" #dob="ngModel" required name="dob" (click)="changeDate()" [(ngModel)]="Employee.dob "
+                    id="dob" class="form-control" aria-describedby="dobHelpInline">
+                <div *ngIf="dob.touched && dob.errors?.['required']" class="text-danger">
+                    Date of Birth is Required!
+                </div>
+                <div *ngIf="error.includes('Age') || error.includes('Date')">
+                    <span><h3 class="text-danger" >{{error}}</h3></span>
+                </div>
+            </div>
+
+            <div class="col-auto">
+                <label for="dept" required class="col-form-label">Gender</label>
+                <div class="input-group">
+                    <select name="gender" [(ngModel)]="Employee.gender" class="form-select">
+                        <option  value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="employee row">
+           
+
+            <div class="col-auto">
+                <label for="email" class="col-form-label">Email</label>
+                <input type="text" #email="ngModel" required pattern="[a-zA-Z0-9_\-\.]+[@][a-z]+[\.][a-z\s]{2,4}$"
+                    class="form-control" name="Email" [(ngModel)]="Employee.email">
+                <div *ngIf="email.touched && email.errors?.['required']" class="text-danger">
+                    Email is Required!
+                </div>
+                <div *ngIf="email.touched && email.errors?.['pattern']" class="text-danger">
+                    Email is invalid!
+                </div>
+                <div *ngIf="error.includes('Email')">
+                    <span><h3 class="text-danger" >{{error}}</h3></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <label for="org" class="col-form-label">Organisation</label>
+
+                <div class="input-group">
+                    <select name="Organisation" [(ngModel)]="Employee.Organisation" name="SelectOrganisation"
+                        class="custom-select">
+                        <option selected>Choose...</option>
+                        <option *ngFor="let items of organisations" ngValue={{items.id}}>{{items.organisation_Name}}
+                        </option>
+                    </select>
+                </div>
+                <div *ngIf="organisationID==''" class="text-danger">Organisation should not be empty! </div>
+
+            </div>
+
+        </div>
+        <div class="employee row">
+           
+
+            <div class="col-auto">
+
+                <label for="dept" class="col-form-label">Department</label>
+
+                <div class="input-group">
+                    <select name="Department" [(ngModel)]="Employee.Department" name="SelectDepartment"
+                      class="custom-select">
+                        <option selected>Choose...</option>
+                        <option *ngFor="let items of departments" ngValue={{items.id}}>{{items.department_name}}</option>
+                    </select>
+                </div>
+                <div *ngIf="departmentID==''" class="text-danger">Department should not be empty! </div>
+
+
+            </div>
+            <div class="col-auto">
+
+                <label for="designation" class="col-form-label">Designation</label>
+
+
+                <div class="input-group">
+                    <select name="Designation" [(ngModel)]="Employee.Designation" name="SelectDesgination" [(ngModel)]="SelectDesignation" class="custom-select">
+                        <option selected>Choose...</option>
+                        <option *ngFor="let items of designations" ngValue={{items.id}}>{{items.designation_name}}
+                        </option>
+                    </select>
+                </div>
+                <div *ngIf="designationID==''" class="text-danger">Designation should not be empty! </div>
+
+            </div>
+
+        </div>
+      
+        <div class="addbutton row button-group">
+            <button
+                
+                type="submit" class="btn btn-primary col-lg-2" [disabled]="!myForm.form.valid">Create</button>
+            <button [routerLink]="['']" class="btn btn-primary col-lg-2">Cancel</button>
+        </div>
+    </form>
+</div>
