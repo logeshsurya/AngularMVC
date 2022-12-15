@@ -1,101 +1,81 @@
 
+using Database.Models;
 using Microsoft.AspNetCore.Mvc;
-using User.Models;
 
-namespace User.Controllers
+
+namespace Database.Controllers
 {
     public class OrganisationController : Controller
     {
-        OrganisationDAL organisation_object = new OrganisationDAL();
+
+        private readonly OrganisationDAL organisation_object;
+
+        private readonly IConfiguration _configuration;
+
+        private readonly ILogger<OrganisationController> _logger;
+
+        public OrganisationController(IConfiguration configuration, ILogger<OrganisationController> logger)
+        {
+            _configuration = configuration;
+            _logger = logger;
+            organisation_object = new OrganisationDAL(_configuration.GetConnectionString("Default"));
+        }
 
 
 
         [HttpGet]
-        [Route("GetAllOrganisation")]
+        [Route("Organisation/GetAll")]
         public JsonResult Index()
         {
-            var organisation = organisation_object.GetOrganisations().ToList();
+            var listOrganisations = organisation_object.GetAllOrganisations().ToList();
+            _logger.LogInformation("Get organisation");
+            return Json(listOrganisations);
+        }
+
+         [HttpGet]
+
+        [Route("Organisation/GetById")]
+        public IActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            Organisation organisation = organisation_object.GetOrganisationById(id);
+            
             return Json(organisation);
         }
 
 
-        [HttpGet]
-        public IActionResult Create()
-        {
-            return View();
-        }
-
 
         [HttpPost]
-        public IActionResult Create([Bind] Organisation organisation)
+
+        [Route("Organisation/Create")]
+        public JsonResult Create([FromBody] Organisation organisation)
         {
-            if (ModelState.IsValid)
-            {
-                organisation_object.AddOrganisation(organisation);
-                return RedirectToAction("Index");
-            }
-            return View(organisation);
+            
+            organisation_object.AddOrganisation(organisation);
+            return Json(organisation);
         }
 
+        [HttpPost]
+        [Route("Organisation/Delete")]
 
-        [HttpGet]
-        public IActionResult Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-            Organisation organisation = organisation_object.GetOrganisationById(id);
-
-            if (organisation == null)
-            {
-                return NotFound();
-            }
-            return View(organisation);
-        }
-
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public IActionResult DeleteConfirmed(int? id)
+        public JsonResult DeleteConfirmed(int? id)
         {
             organisation_object.DeleteOrganisation(id);
-            return RedirectToAction("Index");
+            return Json(id);
+
         }
 
+        [HttpPut]
+        [Route("Organisation/Update")]
 
-        [HttpGet]
-        public IActionResult Edit(int? id)
+        public IActionResult Edit([FromBody] Organisation organisation)
         {
-
-
-            if (id == null)
-            {
-                return NotFound();
-            }
-            Organisation organisation = organisation_object.GetOrganisationById(id);
-
-            if (organisation == null)
-            {
-                return NotFound();
-            }
-            return View(organisation);
-        }
-
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, [Bind] Organisation organisation)
-        {
-            if (id != organisation.id)
-            {
-                return NotFound();
-            }
-            if (ModelState.IsValid)
-            {
-                organisation_object.UpdateOrganisation(organisation);
-                return RedirectToAction("Index");
-            }
-            return View(organisation);
+            
+            organisation_object.UpdateOrganisation(organisation);   
+            return Json(organisation);
         }
 
     }

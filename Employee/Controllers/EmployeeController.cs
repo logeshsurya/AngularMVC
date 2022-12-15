@@ -1,122 +1,110 @@
-using Microsoft.AspNetCore.Mvc;   
-using User.Models;
-using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc;
+using Database.Models;
 
 
-namespace User.Controllers
-{  
-    public class EmployeeController : Controller  
-    {  
+namespace Database.Controllers
+{
+    public class EmployeeController : Controller
+    {
+
+
+        private readonly EmployeeDAL employee_object;
+
+        private readonly IConfiguration _configuration;
         
-        EmployeeDAL employee_object = new EmployeeDAL(); 
+         private readonly ILogger<EmployeeController> _logger;
 
-        DepartmentDAL department_obj = new DepartmentDAL();
 
-        DesignationDAL designation_obj = new DesignationDAL();
-
-        OrganisationDAL organisation_obj = new OrganisationDAL();
-
-        public void Dept_list()
+        public EmployeeController(IConfiguration configuration,ILogger<EmployeeController> logger)
         {
-            
-            ViewBag.departments = new SelectList(department_obj.GetDepartments(),"id","department_name");
+            _configuration = configuration;
+             _logger = logger;
+             employee_object = new EmployeeDAL(_configuration.GetConnectionString("Default"));
+        }
+
+
+
         
-        }
-        public void Desg_list()
-        {
-            ViewBag.designations = new SelectList(designation_obj.GetDesignations(),"id","designation_name");
-        }
-        public void Org_list()
-        {
-            ViewBag.organisations = new SelectList(organisation_obj.GetOrganisations(),"id","Organisation_Name");
-        }
-
-
 
         [HttpGet]
 
-        [Route("GetAllEmployee")]
-    
-        public JsonResult Index()  
-        {  
+        [Route("Employee/GetAll")]
 
-            var listEmployees = employee_object.GetAllEmployees().ToList();  
-            return Json(listEmployees);  
-        }  
+        public JsonResult Index()
+        {
 
-      
+            var listEmployees = employee_object.GetAllEmployees().ToList();
+            _logger.LogInformation("Get all employees");
+            return Json(listEmployees);
+        }
 
-  
-[HttpPost]  
-[Route("Employee/Create")] 
-public JsonResult Create([FromBody] Employee employee)  
-{  
-    
-        employee_object.AddEmployee(employee);  
-        RedirectToAction("Index");
-    return Json(employee);  
+        [HttpGet]
+
+        [Route("Employee/GetEmployeeById")]
+        public IActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            Employee employee = employee_object.GetEmployeeById(id);
+
+            if (employee == null)
+            {
+                return NotFound();
+            }
+            return Json(employee);
+        }
+
+        [HttpPost]
+
+        [Route("Employee/Create")]
+        public JsonResult Create([FromBody] Employee employee)
+        {
+
+            employee_object.AddEmployee(employee);
+            return Json(employee);
+        }
+
+        [HttpPost]
+        [Route("Employee/Delete")]
+        public JsonResult DeleteConfirmed(int? id)
+        {
+            employee_object.DeleteEmployee(id);
+            return Json(id);
+        }
+
+
+        [HttpPut]
+        [Route("Employee/Update")]
+        public IActionResult Edit([FromBody] Employee employee)
+        {
+
+
+            employee_object.UpdateEmployee(employee);
+              
+
+            return Json(employee);
+        }
+
+
+        //  [HttpGet]
+
+        // [Route("Employee/Filters")]
+
+        // public JsonResult Productfilter(int? id)  
+
+        // {  
+
+        //     var listEmployees = employee_object.GetEmployeeFilter(id).ToList();  
+
+        //     return Json(listEmployees);  
+
+        // }
+
+    //  }
+
+     
+    }
+
 }
-
-[HttpPost]
-    [Route("Employee/Delete")]  
-    public JsonResult DeleteConfirmed(int? id)  
-    {  
-        employee_object.DeleteEmployee(id);  
-        return Json(id);
-    }  
- 
-  
-[HttpPut]    
-[Route("Employee/Update")]
-public IActionResult Edit([FromBody] Employee employee)    
-{    
-     
-        
-        employee_object.UpdateEmployee(employee);   
-        // return RedirectToAction("Index");    
-     
-    return Json(employee);    
-}    
-
-[HttpGet]  
-
-[Route("Employee/GetEmployeeById")]
-public IActionResult Details(int? id)  
-{  
-    if (id == null)  
-    {  
-        return NotFound();  
-    }  
-    Employee employee = employee_object.GetEmployeeById(id);  
-  
-    if (employee == null)  
-    {  
-        return   NotFound();
-    }  
-    return Json(employee);  
-} 
-
-
-    //     [HttpGet]  
-    // public IActionResult Delete(int? id)  
-    // {  
-    //     if (id == null)  
-    //     {  
-    //         return NotFound();  
-    //     }  
-    //     Employee employee = employee_object.GetEmployeeById(id);  
-      
-    //     if (employee == null)  
-    //     {  
-    //         return NotFound();  
-    //     }  
-    //     return View(employee);  
-    // }  
-      
-    
-
-
-
-     }  
-
-}  

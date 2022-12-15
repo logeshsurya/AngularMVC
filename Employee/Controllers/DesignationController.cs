@@ -1,103 +1,90 @@
 
+using Database.Models;
 using Microsoft.AspNetCore.Mvc;
-using User.Models;
 
-namespace User.Controllers
+
+namespace Database.Controllers
 {
     public class DesignationController : Controller
     {
 
-        DesignationDAL designation_object = new DesignationDAL();
+        private readonly DesignationDAL designation_object ;
 
+        private readonly IConfiguration _configuration;
+
+        private readonly ILogger _logger;
+
+        public DesignationController(IConfiguration configuration,ILogger<DesignationController> logger)
+        {
+            _configuration = configuration;
+            _logger = logger;
+             designation_object = new DesignationDAL(_configuration.GetConnectionString("Default"));
+
+        }
 
 
         [HttpGet]
-        [Route("GetAllDesignation")]
+        [Route("Designation/GetAll")]
 
         public JsonResult Index()
         {
 
-            var designation = designation_object.GetDesignations().ToList();
-
-            return Json(designation);
+            var listDesignations = designation_object.GetAllDesignations().ToList();
+            _logger.LogInformation("Get Designations");
+            return Json(listDesignations);
         }
+
         [HttpGet]
 
-        public IActionResult Create()
+        [Route("Designation/GetById")]
+        public IActionResult Details(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+            Designation designation = designation_object.GetDesignationById(id);
+
+            if (designation == null)
+            {
+                return NotFound();
+            }
+            return Json(designation);
         }
+        
 
         [HttpPost]
+        [Route("Designation/Create")]    
 
-        public IActionResult Create([Bind] Designation designation)
+        public JsonResult Create([FromBody] Designation designation)
         {
             if (ModelState.IsValid)
             {
                 designation_object.AddDesignation(designation);
-                return RedirectToAction("Index");
             }
-            return View(designation);
-        }
-
-
-        [HttpGet]
-        public IActionResult Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-            Designation designation = designation_object.GetDesignationById(id);
-
-            if (designation == null)
-            {
-                return NotFound();
-            }
-            return View(designation);
-        }
-
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public IActionResult DeleteConfirmed(int? id)
-        {
-            designation_object.DeleteDesignation(id);
-            return RedirectToAction("Index");
-        }
-
-        [HttpGet]
-        public IActionResult Edit(int? id)
-        {
-
-
-            if (id == null)
-            {
-                return NotFound();
-            }
-            Designation designation = designation_object.GetDesignationById(id);
-
-            if (designation == null)
-            {
-                return NotFound();
-            }
-            return View(designation);
+            return Json(designation);
         }
 
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, [Bind] Designation designation)
+        [Route("Designation/Delete")]
+        public JsonResult DeleteConfirmed(int? id)
         {
-            if (id != designation.id)
-            {
-                return NotFound();
-            }
+            designation_object.DeleteDesignation(id);
+            return Json(id);
+        }
+
+
+        [HttpPut]
+        [Route("Designation/Update")]
+        public JsonResult Edit([FromBody] Designation designation)
+        {
             if (ModelState.IsValid)
             {
                 designation_object.UpdateDesignation(designation);
-                return RedirectToAction("Index");
+               
             }
-            return View(designation);
+            return Json(designation);
         }
 
     }

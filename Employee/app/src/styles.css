@@ -12087,10 +12087,7 @@ button {
     margin: 15px 50px 15px 20px;
 }
 
-/* 
-.MoreComments {
-    margin: 0px 22px 10px 22px;
-} */
+
 
 .sidebar-items>li:hover {
     background-color: blueviolet;
@@ -12099,7 +12096,7 @@ button {
 }
 
 
-/* Changes */
+
 
 @media (max-width: 576px) {
     #sidebar {
@@ -12126,8 +12123,7 @@ button {
     }
 }
 
-/*admin*/
-/* Logeshkumar  Add-employee*/
+
 
 @media (max-width: 320px) {
 
@@ -12203,18 +12199,13 @@ button {
     margin-bottom: 50px;
 }
 
-/* @media(max-width:1920px){
-    .table-box{
-        margin-left: 150px;   
-    }
-} */
 
 .custom-select {
     border-color: rgb(0, 0, 0);
 }
 
 
-/* vidhyapriya */
+
 
 .search {
     float: right;
@@ -12244,7 +12235,6 @@ button {
 }
 
 
-/* other*/
 
 .add {
     margin-left: 23rem;
@@ -12319,9 +12309,7 @@ button {
     margin-left: 35rem;
 }
 
-/* admin end*/
 
-/* home */
 
 
 
@@ -12402,7 +12390,7 @@ button {
 
 
 
-/* home end*/
+
 
 html,
 body {

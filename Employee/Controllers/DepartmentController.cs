@@ -1,105 +1,81 @@
 
+using Database.Models;
 using Microsoft.AspNetCore.Mvc;
-using User.Models;
 
-namespace User.Controllers
+
+namespace Database.Controllers
 {
     public class DepartmentController : Controller
     {
 
-        DepartmentDAL department_object = new DepartmentDAL();
+        private readonly DepartmentDAL department_object;
 
+        private readonly IConfiguration _configuration;
+
+        private readonly ILogger _logger;
+
+        public DepartmentController(IConfiguration configuration,ILogger<DepartmentController> logger)
+        {
+            _configuration = configuration;
+            _logger = logger;
+            department_object = new DepartmentDAL(_configuration.GetConnectionString("Default"));
+        }
 
         [HttpGet]
-        [Route("GetAllDepartment")]
+        [Route("Department/GetAll")]
 
         public JsonResult Index()
         {
-            var department = department_object.GetDepartments().ToList();
+            var department = department_object.GetAllDepartments().ToList();
 
             return Json(department);
         }
 
         [HttpGet]
 
-        public IActionResult Create()
+        [Route("Department/GetById")]
+        public JsonResult Details(int? id)
         {
-            return View();
+            
+            Department department = department_object.GetDepartmentById(id);
+            return Json(department);
         }
 
         [HttpPost]
+        [Route("Department/Create")]
 
-        public IActionResult Create([Bind] Department department)
+        public JsonResult Create([FromBody] Department department)
         {
             if (ModelState.IsValid)
             {
                 department_object.AddDepartment(department);
-                return RedirectToAction("Index");
             }
-            return View(department);
-        }
-
-
-        [HttpGet]
-        public IActionResult Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-            Department department = department_object.GetDepartmentById(id);
-
-            if (department == null)
-            {
-                return NotFound();
-            }
-            return View(department);
-        }
-
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public IActionResult DeleteConfirmed(int? id)
-        {
-            department_object.DeleteDepartment(id);
-            return RedirectToAction("Index");
-        }
-
-
-        [HttpGet]
-        public IActionResult Edit(int? id)
-        {
-
-
-            if (id == null)
-            {
-                return NotFound();
-            }
-            Department department = department_object.GetDepartmentById(id);
-
-            if (department == null)
-            {
-                return NotFound();
-            }
-            return View(department);
+            return Json(department);
         }
 
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, [Bind] Department department)
+        [Route("Department/Delete")]
+    
+        public JsonResult DeleteConfirmed(int? id)
         {
-            if (id != department.id)
-            {
-                return NotFound();
-            }
+            department_object.DeleteDepartment(id);
+            return Json(id);
+        }
+
+
+        [HttpPut]
+        [Route("Department/Update")]
+        
+        public JsonResult Edit([FromBody] Department department)
+        {
+            
             if (ModelState.IsValid)
             {
                 department_object.UpdateDepartment(department);
-                return RedirectToAction("Index");
             }
-            return View(department);
+            return Json(department);
         }
-
 
     }
 }

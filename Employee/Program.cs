@@ -1,7 +1,23 @@
+using Microsoft.OpenApi.Models;
+using Serilog;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+var _logger = new LoggerConfiguration()
+
+  .ReadFrom.Configuration(builder.Configuration)
+
+  .Enrich.FromLogContext()
+
+  .CreateLogger();
+
+// builder.Logging.ClearProviders(); //if its enabled console loggings won't work
+
+builder.Logging.AddSerilog(_logger);
+
 // builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 builder.Services.AddCors((setup) =>
 {
@@ -11,26 +27,29 @@ builder.Services.AddCors((setup) =>
     });
 });
 builder.Services.AddEndpointsApiExplorer();
-// builder.Services.AddSwaggerGen(c =>
-// {
-//     c.SwaggerDoc("v1", new OpenApiInfo { Title = "DemoApp_API", Version = "v1" });
-// });
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "DemoApp_API", Version = "v1" });
+});
 
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
 
-    // app.UseSwagger(options =>
-    // {
-    //     options.SerializeAsV2 = true;
-    // });
-    // app.UseSwaggerUI(options =>
-    // {
-    //     options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
-    //     options.RoutePrefix = "api/swagger";
-    // });
+    app.UseSwagger(options =>
+    {
+        options.SerializeAsV2 = true;
+
+
+    });
+    app.UseSwaggerUI(options =>
+    {
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+        options.RoutePrefix = "api/swagger";
+    });
     
 }
 else{

@@ -1,0 +1,30 @@
+
+<div class="container table-box">
+
+    <form class="border-box" #ngForm (ngSubmit)="OnSubmit()">
+
+        <span class="border-box-tip"><b>Edit Organisation</b></span>
+
+        <div class="organisation row">
+            <div class="col-auto">
+                <label for="organisationName" class="col-form-label">Organisation Name</label>
+                <input type="text" #organisationName="ngModel" name="organisationName" required pattern="^[a-zA-Z][a-zA-Z\s]{0,20}[a-zA-Z]$" class="form-control" value={{data.organisation_Name}} [(ngModel)]="data.organisation_Name" >
+                <div *ngIf ="organisationName.touched && organisationName.errors?.['required']" class="text-danger input">
+                    Organisation Name is Required!
+                </div>
+                <div *ngIf ="organisationName.touched && organisationName.errors?.['pattern']" class="text-danger input" >
+                    Should not contain numbers and special characters!
+                </div>
+                <div *ngIf="organisationName.touched && error.includes('Organisation')">
+                    <span><h3 class="text-center text-danger">{{error}}</h3></span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="addbutton row button-group">
+            <button  type="submit" class="btn btn-primary col-lg-2">Update</button>
+            <button [routerLink]="['/admin/organisation']" class="btn btn-danger col-lg-2">Cancel</button>
+        </div>
+    </form>
+</div>

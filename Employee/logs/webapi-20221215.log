@@ -1,0 +1,65 @@
+[2022-12-15 10:30:51.661 +05:30  INF]  User profile is available. Using 'C:\Users\logesh.karthik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-12-15 10:30:51.893 +05:30  INF]  Now listening on: https://localhost:7256
+[2022-12-15 10:30:51.929 +05:30  INF]  Now listening on: http://localhost:5155
+[2022-12-15 10:30:51.945 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-12-15 10:30:51.978 +05:30  INF]  Hosting environment: Development
+[2022-12-15 10:30:52.047 +05:30  INF]  Content root path: C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\
+[2022-12-15 10:30:52.711 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/ - -
+[2022-12-15 10:30:52.759 +05:30  INF]  Executing endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2022-12-15 10:30:52.767 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Database.Controllers.HomeController (Employee).
+[2022-12-15 10:30:52.781 +05:30  INF]  Executing ViewResult, running view Index.
+[2022-12-15 10:30:52.909 +05:30  INF]  Executed ViewResult - view Index executed in 123.1816ms.
+[2022-12-15 10:30:52.916 +05:30  INF]  Executed action Database.Controllers.HomeController.Index (Employee) in 148.814ms
+[2022-12-15 10:30:52.917 +05:30  INF]  Executed endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2022-12-15 10:30:52.939 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 227.9974ms
+[2022-12-15 10:30:53.014 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee.styles.css?v=1zBmUAqtmJGZ4iG0upJMx4OCtBwRsT0xXpZ3s3bh0xA - -
+[2022-12-15 10:30:53.033 +05:30  INF]  The file /Employee.styles.css was not modified
+[2022-12-15 10:30:53.034 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Employee.styles.css?v=1zBmUAqtmJGZ4iG0upJMx4OCtBwRsT0xXpZ3s3bh0xA - - - 304 - text/css 19.4142ms
+[2022-12-15 10:30:53.052 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/favicon.ico - -
+[2022-12-15 10:30:53.066 +05:30  INF]  Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\favicon.ico'
+[2022-12-15 10:30:53.066 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/favicon.ico - - - 0 5430 image/x-icon 13.9058ms
+[2022-12-15 10:30:56.573 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/swagger - -
+[2022-12-15 10:30:56.576 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/swagger - - - 404 0 - 3.0969ms
+[2022-12-15 10:31:04.595 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/swagger.html - -
+[2022-12-15 10:31:04.599 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/swagger.html - - - 404 0 - 4.5913ms
+[2022-12-15 10:34:24.533 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/swagger-ui.html - -
+[2022-12-15 10:34:24.533 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/swagger-ui.html - - - 404 0 - 0.6551ms
+[2022-12-15 10:35:18.435 +05:30  INF]  User profile is available. Using 'C:\Users\logesh.karthik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-12-15 10:35:18.560 +05:30  INF]  Now listening on: https://localhost:7256
+[2022-12-15 10:35:18.560 +05:30  INF]  Now listening on: http://localhost:5155
+[2022-12-15 10:35:18.566 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-12-15 10:35:18.566 +05:30  INF]  Hosting environment: Development
+[2022-12-15 10:35:18.566 +05:30  INF]  Content root path: C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\
+[2022-12-15 10:35:24.765 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/ - -
+[2022-12-15 10:35:24.789 +05:30  INF]  Executing endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2022-12-15 10:35:24.797 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Database.Controllers.HomeController (Employee).
+[2022-12-15 10:35:24.812 +05:30  INF]  Executing ViewResult, running view Index.
+[2022-12-15 10:35:24.895 +05:30  INF]  Executed ViewResult - view Index executed in 81.6078ms.
+[2022-12-15 10:35:24.897 +05:30  INF]  Executed action Database.Controllers.HomeController.Index (Employee) in 99.5013ms
+[2022-12-15 10:35:24.897 +05:30  INF]  Executed endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2022-12-15 10:35:24.903 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 139.6847ms
+[2022-12-15 10:35:24.946 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - -
+[2022-12-15 10:35:24.955 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+[2022-12-15 10:35:24.956 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - - - 0 162720 text/css 9.4094ms
+[2022-12-15 10:35:40.414 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/swagger-ui.html - -
+[2022-12-15 10:35:40.417 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/swagger-ui.html - - - 404 0 - 3.6675ms
+[2022-12-15 10:35:46.806 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/swagger.html - -
+[2022-12-15 10:35:46.809 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/swagger.html - - - 404 0 - 2.6655ms
+[2022-12-15 11:28:07.721 +05:30  INF]  Application is shutting down...
+[2022-12-15 11:28:37.788 +05:30  INF]  User profile is available. Using 'C:\Users\logesh.karthik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-12-15 11:28:37.952 +05:30  INF]  Now listening on: https://localhost:7256
+[2022-12-15 11:28:37.952 +05:30  INF]  Now listening on: http://localhost:5155
+[2022-12-15 11:28:37.957 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-12-15 11:28:37.957 +05:30  INF]  Hosting environment: Development
+[2022-12-15 11:28:37.957 +05:30  INF]  Content root path: C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\
+[2022-12-15 11:28:42.726 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/ - -
+[2022-12-15 11:28:42.747 +05:30  INF]  Executing endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2022-12-15 11:28:42.753 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Database.Controllers.HomeController (Employee).
+[2022-12-15 11:28:42.762 +05:30  INF]  Executing ViewResult, running view Index.
+[2022-12-15 11:28:43.480 +05:30  INF]  Executed ViewResult - view Index executed in 714.7656ms.
+[2022-12-15 11:28:43.482 +05:30  INF]  Executed action Database.Controllers.HomeController.Index (Employee) in 728.7556ms
+[2022-12-15 11:28:43.482 +05:30  INF]  Executed endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2022-12-15 11:28:43.491 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 766.4499ms
+[2022-12-15 11:28:56.541 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/swagger - -
+[2022-12-15 11:28:56.543 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/swagger - - - 404 0 - 1.6922ms
+[2022-12-15 11:33:46.755 +05:30  INF]  Application is shutting down...

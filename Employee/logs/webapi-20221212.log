@@ -1,0 +1,241 @@
+[2022-12-12 10:09:49.368 +05:30  INF]  User profile is available. Using 'C:\Users\logesh.karthik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-12-12 10:09:49.671 +05:30  INF]  Now listening on: https://localhost:7256
+[2022-12-12 10:09:49.672 +05:30  INF]  Now listening on: http://localhost:5155
+[2022-12-12 10:09:49.682 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-12-12 10:09:49.684 +05:30  INF]  Hosting environment: Development
+[2022-12-12 10:09:49.685 +05:30  INF]  Content root path: C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\
+[2022-12-12 10:09:50.602 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/ - -
+[2022-12-12 10:09:50.664 +05:30  INF]  Executing endpoint 'User.Controllers.HomeController.Index (Employee)'
+[2022-12-12 10:09:50.688 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller User.Controllers.HomeController (Employee).
+[2022-12-12 10:09:50.716 +05:30  INF]  Executing ViewResult, running view Index.
+[2022-12-12 10:09:50.874 +05:30  INF]  Executed ViewResult - view Index executed in 165.0328ms.
+[2022-12-12 10:09:50.880 +05:30  INF]  Executed action User.Controllers.HomeController.Index (Employee) in 190.5247ms
+[2022-12-12 10:09:50.880 +05:30  INF]  Executed endpoint 'User.Controllers.HomeController.Index (Employee)'
+[2022-12-12 10:09:50.890 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 292.5743ms
+[2022-12-12 10:09:50.946 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee.styles.css?v=1zBmUAqtmJGZ4iG0upJMx4OCtBwRsT0xXpZ3s3bh0xA - -
+[2022-12-12 10:09:50.946 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - -
+[2022-12-12 10:09:50.946 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+[2022-12-12 10:09:50.946 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+[2022-12-12 10:09:50.947 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - -
+[2022-12-12 10:09:50.965 +05:30  INF]  The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+[2022-12-12 10:09:50.966 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 304 - application/javascript 19.6682ms
+[2022-12-12 10:09:50.966 +05:30  INF]  The file /lib/jquery/dist/jquery.min.js was not modified
+[2022-12-12 10:09:50.966 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+[2022-12-12 10:09:50.966 +05:30  INF]  The file /js/site.js was not modified
+[2022-12-12 10:09:50.966 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 304 - application/javascript 0.2926ms
+[2022-12-12 10:09:50.968 +05:30  INF]  The file /css/site.css was not modified
+[2022-12-12 10:09:50.966 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - - - 304 - application/javascript 20.0340ms
+[2022-12-12 10:09:50.970 +05:30  INF]  The file /Employee.styles.css was not modified
+[2022-12-12 10:09:50.971 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 304 - text/css 25.3973ms
+[2022-12-12 10:09:50.972 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Employee.styles.css?v=1zBmUAqtmJGZ4iG0upJMx4OCtBwRsT0xXpZ3s3bh0xA - - - 304 - text/css 25.8222ms
+[2022-12-12 10:09:51.013 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+[2022-12-12 10:09:51.016 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162720 text/css 68.9020ms
+[2022-12-12 10:09:51.081 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/favicon.ico - -
+[2022-12-12 10:09:51.087 +05:30  INF]  Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\favicon.ico'
+[2022-12-12 10:09:51.087 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/favicon.ico - - - 0 5430 image/x-icon 5.7521ms
+[2022-12-12 10:10:53.780 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/GetAllEmployee - -
+[2022-12-12 10:10:53.785 +05:30  INF]  CORS policy execution successful.
+[2022-12-12 10:10:53.790 +05:30  INF]  Executing endpoint 'User.Controllers.EmployeeController.Index (Employee)'
+[2022-12-12 10:10:53.792 +05:30  INF]  Route matched with {action = "Index", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult Index() on controller User.Controllers.EmployeeController (Employee).
+[2022-12-12 10:10:59.150 +05:30  INF]  Get all employees
+[2022-12-12 10:10:59.153 +05:30  INF]  Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[User.Models.Employee, Employee, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-12-12 10:10:59.203 +05:30  INF]  Executed action User.Controllers.EmployeeController.Index (Employee) in 5410.8601ms
+[2022-12-12 10:10:59.203 +05:30  INF]  Executed endpoint 'User.Controllers.EmployeeController.Index (Employee)'
+[2022-12-12 10:10:59.203 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/GetAllEmployee - - - 200 - application/json;+charset=utf-8 5422.5374ms
+[2022-12-12 10:12:20.625 +05:30  INF]  User profile is available. Using 'C:\Users\logesh.karthik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-12-12 10:12:20.837 +05:30  INF]  Now listening on: https://localhost:7256
+[2022-12-12 10:12:20.848 +05:30  INF]  Now listening on: http://localhost:5155
+[2022-12-12 10:12:20.861 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-12-12 10:12:20.872 +05:30  INF]  Hosting environment: Development
+[2022-12-12 10:12:20.881 +05:30  INF]  Content root path: C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\
+[2022-12-12 10:12:21.604 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/ - -
+[2022-12-12 10:12:21.648 +05:30  INF]  Executing endpoint 'User.Controllers.HomeController.Index (Employee)'
+[2022-12-12 10:12:21.658 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller User.Controllers.HomeController (Employee).
+[2022-12-12 10:12:21.674 +05:30  INF]  Executing ViewResult, running view Index.
+[2022-12-12 10:12:21.806 +05:30  INF]  Executed ViewResult - view Index executed in 129.9142ms.
+[2022-12-12 10:12:21.811 +05:30  INF]  Executed action User.Controllers.HomeController.Index (Employee) in 152.1829ms
+[2022-12-12 10:12:21.811 +05:30  INF]  Executed endpoint 'User.Controllers.HomeController.Index (Employee)'
+[2022-12-12 10:12:21.821 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 220.7761ms
+[2022-12-12 10:12:21.877 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+[2022-12-12 10:12:21.878 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - -
+[2022-12-12 10:12:21.878 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee.styles.css?v=1zBmUAqtmJGZ4iG0upJMx4OCtBwRsT0xXpZ3s3bh0xA - -
+[2022-12-12 10:12:21.879 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/favicon.ico - -
+[2022-12-12 10:12:21.894 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+[2022-12-12 10:12:21.895 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - - - 0 162720 text/css 16.8898ms
+[2022-12-12 10:12:21.895 +05:30  INF]  Sending file. Request path: '/Employee.styles.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\obj\Debug\net6.0\scopedcss\bundle\Employee.styles.css'
+[2022-12-12 10:12:21.895 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Employee.styles.css?v=1zBmUAqtmJGZ4iG0upJMx4OCtBwRsT0xXpZ3s3bh0xA - - - 0 1125 text/css 17.2132ms
+[2022-12-12 10:12:21.896 +05:30  INF]  Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\css\site.css'
+[2022-12-12 10:12:21.896 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 0 194 text/css 18.9165ms
+[2022-12-12 10:12:21.896 +05:30  INF]  Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\favicon.ico'
+[2022-12-12 10:12:21.896 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/favicon.ico - - - 0 5430 image/x-icon 17.3301ms
+[2022-12-12 10:12:25.839 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/GetAllEmployee - -
+[2022-12-12 10:12:25.845 +05:30  INF]  CORS policy execution successful.
+[2022-12-12 10:12:25.934 +05:30  INF]  Executing endpoint 'User.Controllers.EmployeeController.Index (Employee)'
+[2022-12-12 10:12:25.995 +05:30  INF]  Route matched with {action = "Index", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult Index() on controller User.Controllers.EmployeeController (Employee).
+[2022-12-12 10:12:31.730 +05:30  INF]  Get all employees
+[2022-12-12 10:12:31.731 +05:30  INF]  Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[User.Models.Employee, Employee, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-12-12 10:12:31.775 +05:30  INF]  Executed action User.Controllers.EmployeeController.Index (Employee) in 5779.725ms
+[2022-12-12 10:12:31.775 +05:30  INF]  Executed endpoint 'User.Controllers.EmployeeController.Index (Employee)'
+[2022-12-12 10:12:31.775 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/GetAllEmployee - - - 200 - application/json;+charset=utf-8 5936.5033ms
+[2022-12-12 11:43:48.811 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/GetAllEmployee - -
+[2022-12-12 11:43:48.838 +05:30  INF]  CORS policy execution successful.
+[2022-12-12 11:43:48.863 +05:30  INF]  Executing endpoint 'User.Controllers.EmployeeController.Index (Employee)'
+[2022-12-12 11:43:48.882 +05:30  INF]  Route matched with {action = "Index", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult Index() on controller User.Controllers.EmployeeController (Employee).
+[2022-12-12 12:02:13.071 +05:30  INF]  User profile is available. Using 'C:\Users\logesh.karthik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-12-12 12:02:16.704 +05:30  INF]  Now listening on: https://localhost:7256
+[2022-12-12 12:02:17.106 +05:30  INF]  Now listening on: http://localhost:5155
+[2022-12-12 12:02:17.365 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-12-12 12:02:17.466 +05:30  INF]  Hosting environment: Development
+[2022-12-12 12:02:17.535 +05:30  INF]  Content root path: C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\
+[2022-12-12 12:02:21.008 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/ - -
+[2022-12-12 12:02:21.206 +05:30  INF]  Executing endpoint 'User.Controllers.HomeController.Index (Employee)'
+[2022-12-12 12:02:21.271 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller User.Controllers.HomeController (Employee).
+[2022-12-12 12:02:21.360 +05:30  INF]  Executing ViewResult, running view Index.
+[2022-12-12 12:02:22.005 +05:30  INF]  Executed ViewResult - view Index executed in 708.1815ms.
+[2022-12-12 12:02:22.020 +05:30  INF]  Executed action User.Controllers.HomeController.Index (Employee) in 748.6188ms
+[2022-12-12 12:02:22.021 +05:30  INF]  Executed endpoint 'User.Controllers.HomeController.Index (Employee)'
+[2022-12-12 12:02:22.038 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 1033.7436ms
+[2022-12-12 12:02:22.437 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+[2022-12-12 12:02:22.437 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - -
+[2022-12-12 12:02:22.456 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee.styles.css?v=1zBmUAqtmJGZ4iG0upJMx4OCtBwRsT0xXpZ3s3bh0xA - -
+[2022-12-12 12:02:22.483 +05:30  INF]  Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\css\site.css'
+[2022-12-12 12:02:22.484 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 0 194 text/css 46.6300ms
+[2022-12-12 12:02:22.484 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+[2022-12-12 12:02:22.493 +05:30  INF]  Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\js\site.js'
+[2022-12-12 12:02:22.494 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 0 230 application/javascript 9.4322ms
+[2022-12-12 12:02:22.494 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/favicon.ico - -
+[2022-12-12 12:02:22.501 +05:30  INF]  Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\favicon.ico'
+[2022-12-12 12:02:22.501 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/favicon.ico - - - 0 5430 image/x-icon 6.9285ms
+[2022-12-12 12:02:22.702 +05:30  INF]  Sending file. Request path: '/Employee.styles.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\obj\Debug\net6.0\scopedcss\bundle\Employee.styles.css'
+[2022-12-12 12:02:22.702 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Employee.styles.css?v=1zBmUAqtmJGZ4iG0upJMx4OCtBwRsT0xXpZ3s3bh0xA - - - 0 1125 text/css 246.2700ms
+[2022-12-12 12:02:22.725 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+[2022-12-12 12:02:22.725 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - - - 0 162720 text/css 288.1933ms
+[2022-12-12 12:02:26.639 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/GetAllEmployee - -
+[2022-12-12 12:02:26.657 +05:30  INF]  CORS policy execution successful.
+[2022-12-12 12:02:26.662 +05:30  INF]  Executing endpoint 'User.Controllers.EmployeeController.Index (Employee)'
+[2022-12-12 12:02:26.665 +05:30  INF]  Route matched with {action = "Index", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult Index() on controller User.Controllers.EmployeeController (Employee).
+[2022-12-12 12:02:28.071 +05:30  INF]  Get all employees
+[2022-12-12 12:02:28.074 +05:30  INF]  Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[User.Models.Employee, Employee, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-12-12 12:02:28.359 +05:30  INF]  Executed action User.Controllers.EmployeeController.Index (Employee) in 1693.5814ms
+[2022-12-12 12:02:28.359 +05:30  INF]  Executed endpoint 'User.Controllers.EmployeeController.Index (Employee)'
+[2022-12-12 12:02:28.359 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/GetAllEmployee - - - 200 - application/json;+charset=utf-8 1721.1900ms
+[2022-12-12 15:13:46.865 +05:30  INF]  User profile is available. Using 'C:\Users\logesh.karthik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-12-12 15:13:47.839 +05:30  INF]  Now listening on: https://localhost:7256
+[2022-12-12 15:13:47.839 +05:30  INF]  Now listening on: http://localhost:5155
+[2022-12-12 15:13:47.845 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-12-12 15:13:47.845 +05:30  INF]  Hosting environment: Development
+[2022-12-12 15:13:47.845 +05:30  INF]  Content root path: C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\
+[2022-12-12 15:14:17.551 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/ - -
+[2022-12-12 15:14:17.640 +05:30  INF]  Executing endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2022-12-12 15:14:17.653 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Database.Controllers.HomeController (Employee).
+[2022-12-12 15:14:17.722 +05:30  INF]  Executing ViewResult, running view Index.
+[2022-12-12 15:14:18.225 +05:30  INF]  Executed ViewResult - view Index executed in 517.5446ms.
+[2022-12-12 15:14:18.227 +05:30  INF]  Executed action Database.Controllers.HomeController.Index (Employee) in 573.2015ms
+[2022-12-12 15:14:18.227 +05:30  INF]  Executed endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2022-12-12 15:14:18.235 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 688.1566ms
+[2022-12-12 15:14:18.549 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/favicon.ico - -
+[2022-12-12 15:14:18.587 +05:30  INF]  Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\favicon.ico'
+[2022-12-12 15:14:18.587 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/favicon.ico - - - 0 5430 image/x-icon 38.3171ms
+[2022-12-12 15:14:26.127 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/GetallEmployee - -
+[2022-12-12 15:14:26.130 +05:30  INF]  Executing endpoint 'Database.Controllers.EmployeeController.Index (Employee)'
+[2022-12-12 15:14:26.132 +05:30  INF]  Route matched with {action = "Index", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult Index() on controller Database.Controllers.EmployeeController (Employee).
+[2022-12-12 15:14:40.950 +05:30  INF]  Get all employees
+[2022-12-12 15:14:40.951 +05:30  INF]  Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[Database.Models.Employee, Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-12-12 15:14:41.080 +05:30  INF]  Executed action Database.Controllers.EmployeeController.Index (Employee) in 14947.5931ms
+[2022-12-12 15:14:41.080 +05:30  INF]  Executed endpoint 'Database.Controllers.EmployeeController.Index (Employee)'
+[2022-12-12 15:14:41.081 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/GetallEmployee - - - 200 - application/json;+charset=utf-8 14953.5129ms
+[2022-12-12 15:29:45.143 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/GetAllEmployee - -
+[2022-12-12 15:29:45.189 +05:30  INF]  CORS policy execution successful.
+[2022-12-12 15:29:45.199 +05:30  INF]  Executing endpoint 'Database.Controllers.EmployeeController.Index (Employee)'
+[2022-12-12 15:29:45.206 +05:30  INF]  Route matched with {action = "Index", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult Index() on controller Database.Controllers.EmployeeController (Employee).
+[2022-12-12 15:29:45.537 +05:30  INF]  Get all employees
+[2022-12-12 15:29:45.539 +05:30  INF]  Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[Database.Models.Employee, Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-12-12 15:29:45.542 +05:30  INF]  Executed action Database.Controllers.EmployeeController.Index (Employee) in 335.5475ms
+[2022-12-12 15:29:45.543 +05:30  INF]  Executed endpoint 'Database.Controllers.EmployeeController.Index (Employee)'
+[2022-12-12 15:29:45.543 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/GetAllEmployee - - - 200 - application/json;+charset=utf-8 402.6031ms
+[2022-12-12 18:26:06.384 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/GetAllEmployee - -
+[2022-12-12 18:26:06.401 +05:30  INF]  CORS policy execution successful.
+[2022-12-12 18:26:06.410 +05:30  INF]  Executing endpoint 'Database.Controllers.EmployeeController.Index (Employee)'
+[2022-12-12 18:26:06.420 +05:30  INF]  Route matched with {action = "Index", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult Index() on controller Database.Controllers.EmployeeController (Employee).
+[2022-12-12 18:26:06.498 +05:30  INF]  Executed action Database.Controllers.EmployeeController.Index (Employee) in 76.9324ms
+[2022-12-12 18:26:06.500 +05:30  INF]  Executed endpoint 'Database.Controllers.EmployeeController.Index (Employee)'
+[2022-12-12 18:26:06.974 +05:30  ERR]  An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'GetAllEmployees' expects parameter '@count', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at Database.Models.EmployeeDAL.GetAllEmployees() in C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Database\DataAccessLayer\EmployeeDataAccessLayer.cs:line 65
+   at Database.Controllers.EmployeeController.Index() in C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\Controllers\EmployeeController.cs:line 35
+   at lambda_method19(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+ClientConnectionId:6b84c57f-854c-48a2-9f8e-02725530e3c7
+Error Number:201,State:4,Class:16
+[2022-12-12 18:26:07.020 +05:30  INF]  CORS policy execution successful.
+[2022-12-12 18:26:07.020 +05:30  INF]  Executing endpoint 'Database.Controllers.HomeController.Error (Employee)'
+[2022-12-12 18:26:07.041 +05:30  INF]  Route matched with {action = "Error", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error() on controller Database.Controllers.HomeController (Employee).
+[2022-12-12 18:26:07.066 +05:30  INF]  Executing ViewResult, running view Error.
+[2022-12-12 18:26:07.089 +05:30  INF]  Executed ViewResult - view Error executed in 34.0575ms.
+[2022-12-12 18:26:07.089 +05:30  INF]  Executed action Database.Controllers.HomeController.Error (Employee) in 47.4603ms
+[2022-12-12 18:26:07.089 +05:30  INF]  Executed endpoint 'Database.Controllers.HomeController.Error (Employee)'
+[2022-12-12 18:26:07.089 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/GetAllEmployee - - - 500 - text/html;+charset=utf-8 713.6348ms
+[2022-12-12 18:27:50.186 +05:30  INF]  User profile is available. Using 'C:\Users\logesh.karthik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-12-12 18:27:50.737 +05:30  INF]  Now listening on: https://localhost:7256
+[2022-12-12 18:27:50.760 +05:30  INF]  Now listening on: http://localhost:5155
+[2022-12-12 18:27:50.912 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-12-12 18:27:50.945 +05:30  INF]  Hosting environment: Development
+[2022-12-12 18:27:50.985 +05:30  INF]  Content root path: C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\
+[2022-12-12 18:27:52.747 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/ - -
+[2022-12-12 18:27:52.798 +05:30  INF]  Executing endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2022-12-12 18:27:52.828 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Database.Controllers.HomeController (Employee).
+[2022-12-12 18:27:52.858 +05:30  INF]  Executing ViewResult, running view Index.
+[2022-12-12 18:27:53.058 +05:30  INF]  Executed ViewResult - view Index executed in 212.2435ms.
+[2022-12-12 18:27:53.060 +05:30  INF]  Executed action Database.Controllers.HomeController.Index (Employee) in 231.1886ms
+[2022-12-12 18:27:53.061 +05:30  INF]  Executed endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2022-12-12 18:27:53.065 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 321.5250ms
+[2022-12-12 18:27:53.535 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - -
+[2022-12-12 18:27:53.572 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+[2022-12-12 18:27:53.572 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee.styles.css?v=1zBmUAqtmJGZ4iG0upJMx4OCtBwRsT0xXpZ3s3bh0xA - -
+[2022-12-12 18:27:53.613 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+[2022-12-12 18:27:53.613 +05:30  INF]  Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\css\site.css'
+[2022-12-12 18:27:53.614 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - - - 0 162720 text/css 79.0426ms
+[2022-12-12 18:27:53.614 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 0 194 text/css 42.1232ms
+[2022-12-12 18:27:53.616 +05:30  INF]  Sending file. Request path: '/Employee.styles.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\obj\Debug\net6.0\scopedcss\bundle\Employee.styles.css'
+[2022-12-12 18:27:53.616 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Employee.styles.css?v=1zBmUAqtmJGZ4iG0upJMx4OCtBwRsT0xXpZ3s3bh0xA - - - 0 1125 text/css 43.8333ms
+[2022-12-12 18:27:53.620 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/favicon.ico - -
+[2022-12-12 18:27:53.626 +05:30  INF]  Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\favicon.ico'
+[2022-12-12 18:27:53.626 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/favicon.ico - - - 0 5430 image/x-icon 6.6276ms
+[2022-12-12 18:28:45.868 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/GetAllEmployee - -
+[2022-12-12 18:28:45.902 +05:30  INF]  CORS policy execution successful.
+[2022-12-12 18:28:45.927 +05:30  INF]  Executing endpoint 'Database.Controllers.EmployeeController.Index (Employee)'
+[2022-12-12 18:28:45.943 +05:30  INF]  Route matched with {action = "Index", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult Index(System.Nullable`1[System.Int32]) on controller Database.Controllers.EmployeeController (Employee).

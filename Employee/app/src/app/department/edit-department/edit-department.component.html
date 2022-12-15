@@ -1,0 +1,33 @@
+
+<div class="container table-box">
+
+    <form class="border-box"  #ngForm (ngSubmit)="OnSubmit()">
+
+        <span class="border-box-tip"><b>Edit Department</b></span>           
+
+        <div class="department row">
+            <div class="col-auto">
+                <label class="col-form-label">Department Name</label>
+                <input type="text" #departmentName="ngModel" required pattern="^[a-zA-Z][a-zA-Z\s]{0,20}[a-zA-Z]$" class="form-control" name="departmentName" value={{data.department_Name}} [(ngModel)]="data.department_Name" >
+                <div *ngIf ="departmentName.touched && departmentName.errors?.['required']" class="alert alert-danger">
+                    Department Name is Required!
+                </div>
+                <div *ngIf="departmentName.touched && error.includes('Department')">
+                    <span><h3 class="text-center text-danger">{{error}}</h3></span>
+                </div>
+                <div *ngIf ="departmentName.touched && departmentName.errors?.['pattern']" class="alert alert-danger input" >
+                    Should not contain Numbers and special characters!
+                </div>
+            </div>
+               
+         </div>
+
+            <div class="addbutton row button-group">
+                <button type="submit" class="btn btn-primary col-lg-2">Update</button>
+                <button [routerLink]="['/department']" class="btn btn-danger col-lg-2">Cancel</button>
+            </div>
+    
+    </form>
+</div>
+
+

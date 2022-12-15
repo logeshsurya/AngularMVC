@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\logesh.karthik\\Desktop\\AngularMVC\\Employee\\Employee.csproj": {}
+    "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\Employee\\Employee.csproj": {}
   },
   "projects": {
-    "C:\\Users\\logesh.karthik\\Desktop\\AngularMVC\\Employee\\Employee.csproj": {
+    "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\Database\\Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\logesh.karthik\\Desktop\\AngularMVC\\Employee\\Employee.csproj",
-        "projectName": "Employee",
-        "projectPath": "C:\\Users\\logesh.karthik\\Desktop\\AngularMVC\\Employee\\Employee.csproj",
+        "projectUniqueName": "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\Database\\Database.csproj",
+        "projectName": "Database",
+        "projectPath": "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\Database\\Database.csproj",
         "packagesPath": "C:\\Users\\logesh.karthik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\logesh.karthik\\Desktop\\AngularMVC\\Employee\\obj\\",
+        "outputPath": "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\Database\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\logesh.karthik\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,9 +38,135 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\Employee\\Employee.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\Employee\\Employee.csproj",
+        "projectName": "Employee",
+        "projectPath": "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\Employee\\Employee.csproj",
+        "packagesPath": "C:\\Users\\logesh.karthik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\Employee\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\logesh.karthik\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\Database\\Database.csproj": {
+                "projectPath": "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\Database\\Database.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "PagedList": {
+              "target": "Package",
+              "version": "[1.17.0, )"
+            },
+            "PagedList.Mvc": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            },
+            "serilog.aspnetcore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "serilog.expressions": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "serilog.sinks.seq": {
+              "target": "Package",
+              "version": "[5.1.1, )"
             }
           },
           "imports": [

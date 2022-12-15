@@ -1,0 +1,31 @@
+
+
+<div class="container table-box">
+
+    <form class="border-box" #myForm="ngForm" (ngSubmit)="OnSubmit()">
+
+        <span class="border-box-tip"><b>Edit Designation</b></span>
+
+        <div class="designation row">
+            <div class="col-auto">
+                <label for="firstName" class="col-form-label">Designation Name</label>
+                <input type="text"  class="form-control" #designationName="ngModel" required pattern="[a-zA-Z\s]{0,20}[a-zA-Z\s]{0,20}[a-zA-Z]$" name="designationName" value={{data.designation_Name}} [(ngModel)]="data.designation_Name" >
+                <div *ngIf ="designationName.touched && designationName.errors?.['required']" class="alert alert-danger">
+                    Designation Name is Required!
+                </div>
+                <div *ngIf ="designationName.touched && designationName.errors?.['pattern']" class="alert alert-danger input" >
+                    Should not contain Numbers and special characters!
+                </div>          
+        </div>
+        <div *ngIf="designationName.touched && error.includes('Designation')">
+            <span><h3 class="text-center text-danger">{{error}}</h3></span>
+        </div>
+    </div>
+        <div class="addbutton row button-group">
+            <button type="submit" class="btn btn-primary col-lg-2" [disabled]="!myForm.form.valid"> Update </button>
+            <button [routerLink]="['/designation']" class="btn btn-danger col-lg-2">Back</button>
+
+        </div>
+        
+    </form>
+</div>
