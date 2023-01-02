@@ -1,0 +1,50 @@
+[2022-12-31 08:29:33.908 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Designation/GetAll - -
+[2022-12-31 08:29:33.908 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Department/GetAll - -
+[2022-12-31 08:29:33.908 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee/GetEmployeeById?id=1 - -
+[2022-12-31 08:29:33.913 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Organisation/GetAll - -
+[2022-12-31 08:29:33.924 +05:30  INF]  CORS policy execution successful.
+[2022-12-31 08:29:33.924 +05:30  INF]  CORS policy execution successful.
+[2022-12-31 08:29:33.924 +05:30  INF]  CORS policy execution successful.
+[2022-12-31 08:29:33.925 +05:30  INF]  Executing endpoint 'Database.Controllers.DepartmentController.Index (Employee)'
+[2022-12-31 08:29:33.924 +05:30  INF]  CORS policy execution successful.
+[2022-12-31 08:29:33.925 +05:30  INF]  Executing endpoint 'Database.Controllers.OrganisationController.Index (Employee)'
+[2022-12-31 08:29:33.925 +05:30  INF]  Executing endpoint 'Database.Controllers.EmployeeController.Details (Employee)'
+[2022-12-31 08:29:33.925 +05:30  INF]  Executing endpoint 'Database.Controllers.DesignationController.Index (Employee)'
+[2022-12-31 08:29:33.925 +05:30  INF]  Route matched with {action = "Index", controller = "Organisation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult Index() on controller Database.Controllers.OrganisationController (Employee).
+[2022-12-31 08:29:33.925 +05:30  INF]  Route matched with {action = "Index", controller = "Department"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult Index() on controller Database.Controllers.DepartmentController (Employee).
+[2022-12-31 08:29:33.925 +05:30  INF]  Route matched with {action = "Details", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Details(System.Nullable`1[System.Int32]) on controller Database.Controllers.EmployeeController (Employee).
+[2022-12-31 08:29:33.925 +05:30  INF]  Route matched with {action = "Index", controller = "Designation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult Index() on controller Database.Controllers.DesignationController (Employee).
+[2022-12-31 08:29:34.040 +05:30  INF]  Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[Database.Models.Department, Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-12-31 08:29:34.044 +05:30  INF]  Get organisation
+[2022-12-31 08:29:34.044 +05:30  INF]  Executed action Database.Controllers.DepartmentController.Index (Employee) in 118.9603ms
+[2022-12-31 08:29:34.044 +05:30  INF]  Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[Database.Models.Organisation, Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-12-31 08:29:34.044 +05:30  INF]  Executed endpoint 'Database.Controllers.DepartmentController.Index (Employee)'
+[2022-12-31 08:29:34.044 +05:30  INF]  Executing JsonResult, writing value of type 'Database.Models.Employee'.
+[2022-12-31 08:29:34.044 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Department/GetAll - - - 200 - application/json;+charset=utf-8 136.4661ms
+[2022-12-31 08:29:34.044 +05:30  INF]  Executed action Database.Controllers.OrganisationController.Index (Employee) in 119.225ms
+[2022-12-31 08:29:34.044 +05:30  INF]  Executed action Database.Controllers.EmployeeController.Details (Employee) in 119.2441ms
+[2022-12-31 08:29:34.044 +05:30  INF]  Executed endpoint 'Database.Controllers.OrganisationController.Index (Employee)'
+[2022-12-31 08:29:34.046 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Organisation/GetAll - - - 200 - application/json;+charset=utf-8 133.5352ms
+[2022-12-31 08:29:34.047 +05:30  INF]  Executed endpoint 'Database.Controllers.EmployeeController.Details (Employee)'
+[2022-12-31 08:29:34.049 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Employee/GetEmployeeById?id=1 - - - 200 - application/json;+charset=utf-8 140.6548ms
+[2022-12-31 08:29:34.049 +05:30  INF]  Get Designations
+[2022-12-31 08:29:34.049 +05:30  INF]  Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[Database.Models.Designation, Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-12-31 08:29:34.049 +05:30  INF]  Executed action Database.Controllers.DesignationController.Index (Employee) in 123.8913ms
+[2022-12-31 08:29:34.049 +05:30  INF]  Executed endpoint 'Database.Controllers.DesignationController.Index (Employee)'
+[2022-12-31 08:29:34.049 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Designation/GetAll - - - 200 - application/json;+charset=utf-8 141.5629ms
+[2022-12-31 08:29:36.604 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee/GetAll - -
+[2022-12-31 08:29:36.604 +05:30  INF]  CORS policy execution successful.
+[2022-12-31 08:29:36.604 +05:30  INF]  Executing endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2022-12-31 08:29:36.604 +05:30  INF]  Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAll() on controller Database.Controllers.EmployeeController (Employee).
+[2022-12-31 08:29:36.713 +05:30  INF]  Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[Database.Models.Employee, Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-12-31 08:29:36.713 +05:30  INF]  Executed action Database.Controllers.EmployeeController.GetAll (Employee) in 108.8841ms
+[2022-12-31 08:29:36.713 +05:30  INF]  Executed endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2022-12-31 08:29:36.713 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Employee/GetAll - - - 200 - application/json;+charset=utf-8 109.7463ms
+[2022-12-31 08:36:15.504 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee/GetAll - -
+[2022-12-31 08:36:15.514 +05:30  INF]  CORS policy execution successful.
+[2022-12-31 08:36:15.516 +05:30  INF]  Executing endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2022-12-31 08:36:15.519 +05:30  INF]  Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAll() on controller Database.Controllers.EmployeeController (Employee).
+[2022-12-31 08:36:15.768 +05:30  INF]  Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[Database.Models.Employee, Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2022-12-31 08:36:15.773 +05:30  INF]  Executed action Database.Controllers.EmployeeController.GetAll (Employee) in 253.3007ms
+[2022-12-31 08:36:15.773 +05:30  INF]  Executed endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2022-12-31 08:36:15.773 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Employee/GetAll - - - 200 - application/json;+charset=utf-8 274.2507ms

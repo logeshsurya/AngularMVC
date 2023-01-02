@@ -25,7 +25,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/ag-grid-community/dist/styles/ag-grid.css",
+              "node_modules/ag-grid-community/dist/styles/ag-theme-alpine-dark.css",
+              "node_modules/ag-grid-community/dist/styles/ag-theme-alpine.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": []
           },

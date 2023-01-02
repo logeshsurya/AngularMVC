@@ -1,5 +1,4 @@
 
-
 namespace Database.Models
 {
     public class Organisation

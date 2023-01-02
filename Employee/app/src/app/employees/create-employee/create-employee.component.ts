@@ -59,13 +59,10 @@ export class CreateEmployeeComponent implements OnInit {
   SelectDesignation: any = 0;
 
   ngOnInit(): void {
-    // this.getAllOrganisations().subscribe((data) => {
-    //   this.organisations = data;
-    //   console.log(data);
-    // });
     this.employeeService.GetAll(this.endpoint1).subscribe((data)=>
     {
       this.organisations = data;
+      console.log(data);
     })
 
     this.employeeService.GetAll(this.endpoint2).subscribe((data) => {

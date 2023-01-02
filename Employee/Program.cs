@@ -1,23 +1,27 @@
+using Database.DataAccessLayer;
 using Microsoft.OpenApi.Models;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
-
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 var _logger = new LoggerConfiguration()
 
   .ReadFrom.Configuration(builder.Configuration)
-
   .Enrich.FromLogContext()
-
   .CreateLogger();
 
 // builder.Logging.ClearProviders(); //if its enabled console loggings won't work
-
 builder.Logging.AddSerilog(_logger);
-
+builder.Services.AddControllers().ConfigureApiBehaviorOptions(options =>
+{
+    options.SuppressConsumesConstraintForFormFileParameters = true;
+        options.SuppressInferBindingSourcesForParameters = true;
+        options.SuppressModelStateInvalidFilter = true;
+        options.SuppressMapClientErrors = true;
+});
+builder.Services.AddTransient<EmployeeDAL>();
 // builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 builder.Services.AddCors((setup) =>
 {
@@ -33,24 +37,18 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 var app = builder.Build();
-
-
 // Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment())
 {
-
     app.UseSwagger(options =>
     {
         options.SerializeAsV2 = true;
-
-
     });
     app.UseSwaggerUI(options =>
     {
         options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
         options.RoutePrefix = "api/swagger";
     });
-    
 }
 else{
     app.UseExceptionHandler("/Home/Error");
@@ -59,17 +57,11 @@ else{
 }
 
 app.UseCors("default");
-
-
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
-
 app.UseAuthorization();
-
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
 app.Run();

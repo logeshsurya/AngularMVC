@@ -1,13 +1,11 @@
 using System.Data;
 using System.Data.SqlClient;
 
-
 namespace Database.Models
 {
     public class DesignationDAL
     {
       private  string connection_String ;
-
       public DesignationDAL(string cs)
       {
         connection_String = cs;
@@ -23,7 +21,6 @@ namespace Database.Models
                 SqlCommand command = new SqlCommand("GetAllDesignation", connection);
                 command.CommandType = CommandType.StoredProcedure;
                 connection.Open();
-
                 SqlDataAdapter data = new SqlDataAdapter(command);
                 data.Fill(ds);
 
@@ -32,13 +29,9 @@ namespace Database.Models
                     Designation designation = new Designation();
                     designation.Id = Convert.ToInt32(ds.Tables[0].Rows[i]["desg_id"].ToString());
                     designation.Designation_Name = ds.Tables[0].Rows[i]["desg_name"].ToString();
-
                     listDesignations.Add(designation);
-
                 }
-
                 connection.Close();
-
             }
             return listDesignations;
         }
@@ -56,7 +49,6 @@ namespace Database.Models
             }
         }
 
-
         public void DeleteDesignation(int? id)
         {
 
@@ -64,15 +56,12 @@ namespace Database.Models
             {
                 SqlCommand command = new SqlCommand("Delete_Designation", connection);
                 command.CommandType = CommandType.StoredProcedure;
-
                 command.Parameters.AddWithValue("@desg_id", id);
-
                 connection.Open();
                 command.ExecuteNonQuery();
                 connection.Close();
             }
         }
-
 
         public Designation GetDesignationById(int? id)
         {
@@ -83,7 +72,6 @@ namespace Database.Models
                 SqlCommand command = new SqlCommand("GetDesignationById", connection);
                 command.CommandType = CommandType.StoredProcedure;
                 command.Parameters.AddWithValue("@desg_id", id);
-
                 connection.Open();
                 SqlDataReader reader = command.ExecuteReader();
 
@@ -102,17 +90,12 @@ namespace Database.Models
             {
                 SqlCommand command = new SqlCommand("Update_Designation", connection);
                 command.CommandType = CommandType.StoredProcedure;
-
                 command.Parameters.AddWithValue("@desg_id", designation.Id);
                 command.Parameters.AddWithValue("@desg_name", designation.Designation_Name);
-
-
-
                 connection.Open();
                 command.ExecuteNonQuery();
                 connection.Close();
             }
         }
-
     }
 }

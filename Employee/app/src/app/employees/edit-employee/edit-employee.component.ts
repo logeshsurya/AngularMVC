@@ -31,8 +31,13 @@ export class EditEmployeeComponent implements OnInit {
   designationID: any;
   id: any = 0;
   update: any;
+
+
  
   endpoint = 'Employee';
+  endpoint1= 'Organisation';
+  endpoint2 = 'Department';
+  endpoint3 = 'Designation' 
 
   organisations: any;
   departments: any;
@@ -46,21 +51,6 @@ export class EditEmployeeComponent implements OnInit {
 
   ngOnInit(): void {
   
-
-    this.getAllOrganisations().subscribe((data) => {
-      this.organisations = data;
-      console.log(data);
-    });
-
-    this.getAllDepartments().subscribe((data) => {
-      this.departments = data;
-      console.log(data);
-    });
-
-    this.getAllDesignations().subscribe((data) => {
-      this.designations = data;
-      console.log(data);
-    });
     this.router.params.subscribe(params => {
       this.id = params['id'];
       this.employeeService.GetById(this.endpoint, this.id).subscribe((result) => {
@@ -75,21 +65,28 @@ export class EditEmployeeComponent implements OnInit {
     });
    
 
-  }
+ 
+    this.employeeService.GetAll(this.endpoint1).subscribe((data)=>
+    {
+      this.organisations = data;
+      console.log(data);
+    })
+    
+    this.employeeService.GetAll(this.endpoint2).subscribe((data)=>
+    {
+      this.departments = data;
+      console.log(data);
+    })
 
-  
-  getAllOrganisations(): Observable<any> {
-    return this.http.get<any>('https://localhost:7256/GetAllOrganisation');
-  }
+    this.employeeService.GetAll(this.endpoint3).subscribe((data)=>
+    {
+      this.designations = data;
+      console.log(data);
+    })
 
-  getAllDepartments(): Observable<any> {
-    return this.http.get<any>('https://localhost:7256/GetAllDepartment');
-  }
+   
 
-  getAllDesignations(): Observable<any> {
-    return this.http.get<any>('https://localhost:7256/GetAllDesignation');
   }
-
 
   OnSubmit() {
     console.log(this.update);

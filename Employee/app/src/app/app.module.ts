@@ -18,17 +18,27 @@ import { EditDepartmentComponent } from './department/edit-department/edit-depar
 import { DepartmentProfileComponent } from './department/department-profile/department-profile.component';
 import { DepartmentComponent } from './department/department.component';
 
-
 import { CreateDesignationComponent } from './designation/create-designation/create-designation.component';
 import { EditDesignationComponent } from './designation/edit-designation/edit-designation.component';
 import { DesignationProfileComponent } from './designation/designation-profile/designation-profile.component';
 import { DesignationComponent } from './designation/designation.component';
 
-
 import { OrganisationProfileComponent } from './organisation/organisation-profile/organisation-profile.component';
 import { EditOrganisationComponent } from './organisation/edit-organisation/edit-organisation.component';
 import { CreateOrganisationComponent } from './organisation/create-organisation/create-organisation.component';
 import { OrganisationComponent } from './organisation/organisation.component';
+import { LoginComponent } from './login/login.component';
+
+import { AgGridModule } from 'ag-grid-angular';
+import { ToastrModule } from 'ngx-toastr';
+import { ModuleRegistry } from '@ag-grid-community/core';   
+import { ClientSideRowModelModule } from "@ag-grid-community/client-side-row-model";
+import {RangeSelectionModule} from "@ag-grid-enterprise/range-selection";
+
+ModuleRegistry.registerModules([
+  ClientSideRowModelModule,
+  RangeSelectionModule
+]);
 
 @NgModule({
   declarations: [
@@ -50,8 +60,9 @@ import { OrganisationComponent } from './organisation/organisation.component';
     DepartmentComponent,
     DesignationComponent,
     OrganisationComponent,
-    
+    LoginComponent,
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -59,8 +70,10 @@ import { OrganisationComponent } from './organisation/organisation.component';
     FontAwesomeModule,
     FormsModule,
     NgxPaginationModule,
-    Ng2SearchPipeModule
-    ],
+    Ng2SearchPipeModule,
+    AgGridModule,
+    ToastrModule.forRoot(),
+    ], 
   providers: [],
   bootstrap: [AppComponent]
 })

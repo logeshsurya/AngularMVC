@@ -105,7 +105,7 @@
                     <select name="Department" [(ngModel)]="Employee.Department" name="SelectDepartment"
                       class="custom-select">
                         <option selected>Choose...</option>
-                        <option *ngFor="let items of departments" ngValue={{items.id}}>{{items.department_name}}</option>
+                        <option *ngFor="let items of departments" ngValue={{items.id}}>{{items.department_Name}}</option>
                     </select>
                 </div>
                 <div *ngIf="departmentID==''" class="text-danger">Department should not be empty! </div>
@@ -120,7 +120,7 @@
                 <div class="input-group">
                     <select name="Designation" [(ngModel)]="Employee.Designation" name="SelectDesgination" [(ngModel)]="SelectDesignation" class="custom-select">
                         <option selected>Choose...</option>
-                        <option *ngFor="let items of designations" ngValue={{items.id}}>{{items.designation_name}}
+                        <option *ngFor="let items of designations" ngValue={{items.id}}>{{items.designation_Name}}
                         </option>
                     </select>
                 </div>

@@ -1,13 +1,11 @@
 using System.Data;
 using System.Data.SqlClient;
 
-
 namespace Database.Models
 {
     public class DepartmentDAL
     {
         private string connection_String;
-
         public DepartmentDAL(string cs)
         {
             connection_String = cs;
@@ -23,24 +21,18 @@ namespace Database.Models
                 SqlCommand command = new SqlCommand("GetAllDepartment", connection);
                 command.CommandType = CommandType.StoredProcedure;
                 connection.Open();
-
                 SqlDataAdapter data = new SqlDataAdapter(command);
                 data.Fill(ds);
 
                 for(int i=0;i<ds.Tables[0].Rows.Count;i++)
                 {
                     Department department = new Department();
-
                     department.Id = Convert.ToInt32(ds.Tables[0].Rows[i]["dept_id"].ToString());
                     department.Department_Name = ds.Tables[0].Rows[i]["dept_name"].ToString();
-
                     listDepartments.Add(department);
-
                 }
-
                 connection.Close();
             }
-
             return listDepartments;
         }
 
@@ -59,14 +51,11 @@ namespace Database.Models
 
         public void DeleteDepartment(int? id)
         {
-
             using (SqlConnection connection = new SqlConnection(connection_String))
             {
                 SqlCommand command = new SqlCommand("Delete_department", connection);
                 command.CommandType = CommandType.StoredProcedure;
-
                 command.Parameters.AddWithValue("@Dept_id", id);
-
                 connection.Open();
                 command.ExecuteNonQuery();
                 connection.Close();
@@ -82,7 +71,6 @@ namespace Database.Models
                 SqlCommand command = new SqlCommand("GetDepartmentById", connection);
                 command.CommandType = CommandType.StoredProcedure;
                 command.Parameters.AddWithValue("@Dept_id", id);
-
                 connection.Open();
                 SqlDataReader reader = command.ExecuteReader();
 
@@ -90,12 +78,10 @@ namespace Database.Models
                 {
                     department.Id = Convert.ToInt32(reader["Dept_id"]);
                     department.Department_Name = reader["dept_name"].ToString();
-
                 }
             }
             return department;
         }
-
 
         public void UpdateDepartment(Department department)
         {
@@ -106,14 +92,10 @@ namespace Database.Models
 
                 command.Parameters.AddWithValue("@Dept_id", department.Id);
                 command.Parameters.AddWithValue("@dept_name", department.Department_Name);
-
-
-
                 connection.Open();
                 command.ExecuteNonQuery();
                 connection.Close();
             }
         }
-
     }
 }

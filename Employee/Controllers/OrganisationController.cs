@@ -1,27 +1,19 @@
-
 using Database.Models;
 using Microsoft.AspNetCore.Mvc;
-
 
 namespace Database.Controllers
 {
     public class OrganisationController : Controller
     {
-
         private readonly OrganisationDAL organisation_object;
-
         private readonly IConfiguration _configuration;
-
         private readonly ILogger<OrganisationController> _logger;
-
         public OrganisationController(IConfiguration configuration, ILogger<OrganisationController> logger)
         {
             _configuration = configuration;
             _logger = logger;
             organisation_object = new OrganisationDAL(_configuration.GetConnectionString("Default"));
         }
-
-
 
         [HttpGet]
         [Route("Organisation/GetAll")]
@@ -32,8 +24,7 @@ namespace Database.Controllers
             return Json(listOrganisations);
         }
 
-         [HttpGet]
-
+        [HttpGet]
         [Route("Organisation/GetById")]
         public IActionResult Details(int? id)
         {
@@ -42,41 +33,31 @@ namespace Database.Controllers
                 return NotFound();
             }
             Organisation organisation = organisation_object.GetOrganisationById(id);
-            
             return Json(organisation);
         }
 
-
-
         [HttpPost]
-
         [Route("Organisation/Create")]
         public JsonResult Create([FromBody] Organisation organisation)
         {
-            
             organisation_object.AddOrganisation(organisation);
             return Json(organisation);
         }
 
         [HttpPost]
         [Route("Organisation/Delete")]
-
         public JsonResult DeleteConfirmed(int? id)
         {
             organisation_object.DeleteOrganisation(id);
             return Json(id);
-
         }
 
         [HttpPut]
         [Route("Organisation/Update")]
-
         public IActionResult Edit([FromBody] Organisation organisation)
-        {
-            
+        {   
             organisation_object.UpdateOrganisation(organisation);   
             return Json(organisation);
         }
-
     }
 }

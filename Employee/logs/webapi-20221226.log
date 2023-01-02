@@ -1,0 +1,36 @@
+[2022-12-26 21:23:54.688 +05:30  INF]  User profile is available. Using 'C:\Users\logesh.karthik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-12-26 21:23:54.791 +05:30  INF]  Creating key {8045352c-0deb-44e4-9329-750cb96ec3c6} with creation date 2022-12-26 15:53:54Z, activation date 2022-12-26 15:53:54Z, and expiration date 2023-03-26 15:53:54Z.
+[2022-12-26 21:23:54.810 +05:30  INF]  Writing data to file 'C:\Users\logesh.karthik\AppData\Local\ASP.NET\DataProtection-Keys\key-8045352c-0deb-44e4-9329-750cb96ec3c6.xml'.
+[2022-12-26 21:23:55.019 +05:30  INF]  Now listening on: https://localhost:7256
+[2022-12-26 21:23:55.022 +05:30  INF]  Now listening on: http://localhost:5155
+[2022-12-26 21:23:55.031 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2022-12-26 21:23:55.033 +05:30  INF]  Hosting environment: Development
+[2022-12-26 21:23:55.034 +05:30  INF]  Content root path: C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\
+[2022-12-26 21:23:55.587 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/ - -
+[2022-12-26 21:23:55.675 +05:30  INF]  Executing endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2022-12-26 21:23:55.683 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Database.Controllers.HomeController (Employee).
+[2022-12-26 21:23:55.698 +05:30  INF]  Executing ViewResult, running view Index.
+[2022-12-26 21:23:55.815 +05:30  INF]  Executed ViewResult - view Index executed in 115.8507ms.
+[2022-12-26 21:23:55.821 +05:30  INF]  Executed action Database.Controllers.HomeController.Index (Employee) in 136.6656ms
+[2022-12-26 21:23:55.821 +05:30  INF]  Executed endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2022-12-26 21:23:55.828 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 245.7215ms
+[2022-12-26 21:23:55.858 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee.styles.css?v=1zBmUAqtmJGZ4iG0upJMx4OCtBwRsT0xXpZ3s3bh0xA - -
+[2022-12-26 21:23:55.858 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+[2022-12-26 21:23:55.858 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - -
+[2022-12-26 21:23:55.858 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+[2022-12-26 21:23:55.858 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - -
+[2022-12-26 21:23:55.870 +05:30  INF]  The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+[2022-12-26 21:23:55.870 +05:30  INF]  The file /lib/jquery/dist/jquery.min.js was not modified
+[2022-12-26 21:23:55.870 +05:30  INF]  The file /css/site.css was not modified
+[2022-12-26 21:23:55.870 +05:30  INF]  The file /js/site.js was not modified
+[2022-12-26 21:23:55.871 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 304 - application/javascript 12.8209ms
+[2022-12-26 21:23:55.871 +05:30  INF]  The file /Employee.styles.css was not modified
+[2022-12-26 21:23:55.871 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - - - 304 - text/css 12.8487ms
+[2022-12-26 21:23:55.871 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Employee.styles.css?v=1zBmUAqtmJGZ4iG0upJMx4OCtBwRsT0xXpZ3s3bh0xA - - - 304 - text/css 13.0168ms
+[2022-12-26 21:23:55.871 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+[2022-12-26 21:23:55.871 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 304 - text/css 12.7563ms
+[2022-12-26 21:23:55.871 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - - - 304 - application/javascript 12.8413ms
+[2022-12-26 21:23:55.872 +05:30  INF]  The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+[2022-12-26 21:23:55.873 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 304 - application/javascript 1.4675ms
+[2022-12-26 21:30:40.447 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - -
+[2022-12-26 21:30:40.860 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 413.5779ms

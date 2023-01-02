@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { EmployeesComponent } from './employees/employees.component';
-import {EmployeeProfileComponent} from './employees/employee-profile/employee-profile.component';
-import {CreateEmployeeComponent} from './employees/create-employee/create-employee.component';
+import { EmployeeProfileComponent} from './employees/employee-profile/employee-profile.component';
+import { CreateEmployeeComponent} from './employees/create-employee/create-employee.component';
 import { EditEmployeeComponent } from './employees/edit-employee/edit-employee.component';
 import { OrganisationComponent } from './organisation/organisation.component';
 import { OrganisationProfileComponent } from './organisation/organisation-profile/organisation-profile.component';
@@ -16,9 +16,9 @@ import { DesignationComponent } from './designation/designation.component';
 import { DesignationProfileComponent } from './designation/designation-profile/designation-profile.component';
 import { CreateDesignationComponent } from './designation/create-designation/create-designation.component';
 import { EditDesignationComponent } from './designation/edit-designation/edit-designation.component';
+import { LoginComponent } from './login/login.component';
 const routes: Routes = [
 
-  {path: '', component: EmployeesComponent },
   {path:'employee-profile/:id', component:EmployeeProfileComponent},
   {path:'create-employee',component:CreateEmployeeComponent},
   {path:'edit-employee/:id',component:EditEmployeeComponent},
@@ -36,10 +36,9 @@ const routes: Routes = [
   {path:'designation',component:DesignationComponent},
   {path:'designation-profile',component:DesignationProfileComponent},
   {path:'create-designation',component:CreateDesignationComponent},
-  {path:'edit-designation/:id',component:EditDesignationComponent}
-
-
-
+  {path:'edit-designation/:id',component:EditDesignationComponent},
+  {path:'employees', component: EmployeesComponent },
+  {path:'',component:LoginComponent}, 
 ];
 
 @NgModule({

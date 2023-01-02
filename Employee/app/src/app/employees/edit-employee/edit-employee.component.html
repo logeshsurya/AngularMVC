@@ -93,7 +93,7 @@
                          [(ngModel)]="selectedDepartment" class="custom-select">
                         <option selected>Choose...</option>
                         <option *ngFor="let items of departments" [selected]="items.id == selectedDepartment" value={{items.id}}>
-                            {{items.department_name}}</option>
+                            {{items.department_Name}}</option>
                     </select>
                 </div>
                 <div *ngIf="departmentID==''" class="text-danger">Department should not be empty! </div>
@@ -106,7 +106,7 @@
                     [(ngModel)]="selectedDesignation" class="custom-select">
                      <option selected>Choose...</option>
                         <option *ngFor="let items of designations" [selected]="items.id == selectedDesignation"
-                            value={{items.id}}>{{items.designation_name}}</option>
+                            value={{items.id}}>{{items.designation_Name}}</option>
                     </select>
                 </div>
                 <div *ngIf="designationID==''" class="text-danger">Designation should not be empty! </div>

@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "UGBSPHIni/s5Ddk6Fc+OPBtbv7uCIxSC7AVjq5UA64Q=",
+  "Hash": "TTybP2LuJQ7GFiCKYIALP+4a1X9+u0MvugGiUoHKc0w=",
   "Source": "Employee",
   "BasePath": "_content/Employee",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\WebApi\\WebApi.csproj",
+      "Version": 2,
+      "Source": "WebApi",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "Employee\\wwwroot",
