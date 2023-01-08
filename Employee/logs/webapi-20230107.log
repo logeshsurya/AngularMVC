@@ -1,0 +1,696 @@
+[2023-01-07 12:53:39.652 +05:30  INF]  Application is shutting down...
+[2023-01-07 12:54:00.734 +05:30  INF]  User profile is available. Using 'C:\Users\logesh.karthik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2023-01-07 12:54:01.060 +05:30  INF]  Now listening on: https://localhost:7256
+[2023-01-07 12:54:01.062 +05:30  INF]  Now listening on: http://localhost:5155
+[2023-01-07 12:54:01.073 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2023-01-07 12:54:01.077 +05:30  INF]  Hosting environment: Development
+[2023-01-07 12:54:01.079 +05:30  INF]  Content root path: C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\
+[2023-01-07 12:54:02.755 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/ - -
+[2023-01-07 12:54:03.277 +05:30  INF]  Executing endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 12:54:03.287 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Database.Controllers.HomeController (Employee).
+[2023-01-07 12:54:03.297 +05:30  INF]  Executing ViewResult, running view Index.
+[2023-01-07 12:54:03.865 +05:30  INF]  Executed ViewResult - view Index executed in 563.967ms.
+[2023-01-07 12:54:03.873 +05:30  INF]  Executed action Database.Controllers.HomeController.Index (Employee) in 585.4103ms
+[2023-01-07 12:54:03.873 +05:30  INF]  Executed endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 12:54:03.883 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 1130.6674ms
+[2023-01-07 12:54:04.380 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - -
+[2023-01-07 12:54:04.593 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - -
+[2023-01-07 12:54:04.618 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+[2023-01-07 12:54:04.659 +05:30  INF]  Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\jquery\dist\jquery.min.js'
+[2023-01-07 12:54:04.659 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+[2023-01-07 12:54:04.659 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+[2023-01-07 12:54:04.664 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78468 application/javascript 46.0392ms
+[2023-01-07 12:54:04.664 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162720 text/css 283.5735ms
+[2023-01-07 12:54:04.664 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 70.8547ms
+[2023-01-07 12:55:09.953 +05:30  INF]  Request starting HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - -
+[2023-01-07 12:55:09.960 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 12:55:09.965 +05:30  INF]  Request finished HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - - - 204 - - 11.8848ms
+[2023-01-07 12:55:09.983 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee/GetAll - -
+[2023-01-07 12:55:09.983 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 12:55:10.067 +05:30  INF]  Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+[2023-01-07 12:55:10.068 +05:30  INF]  Executing endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 12:55:10.085 +05:30  INF]  Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAll() on controller Database.Controllers.EmployeeController (Employee).
+[2023-01-07 12:55:52.037 +05:30  INF]  Executed action Database.Controllers.EmployeeController.GetAll (Employee) in 41951.6111ms
+[2023-01-07 12:55:52.038 +05:30  INF]  Executed endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 12:55:52.137 +05:30  ERR]  An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:7031)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Database.Controllers.EmployeeController.GetAll() in C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\Controllers\EmployeeController.cs:line 40
+   at lambda_method24(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[2023-01-07 12:55:52.145 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Employee/GetAll - - - 500 - text/plain;+charset=utf-8 42162.2271ms
+[2023-01-07 12:56:03.222 +05:30  INF]  User profile is available. Using 'C:\Users\logesh.karthik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2023-01-07 12:56:03.773 +05:30  INF]  Now listening on: https://localhost:7256
+[2023-01-07 12:56:03.775 +05:30  INF]  Now listening on: http://localhost:5155
+[2023-01-07 12:56:03.786 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2023-01-07 12:56:03.788 +05:30  INF]  Hosting environment: Development
+[2023-01-07 12:56:03.790 +05:30  INF]  Content root path: C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\
+[2023-01-07 12:56:05.165 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/ - -
+[2023-01-07 12:56:05.354 +05:30  INF]  Executing endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 12:56:05.369 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Database.Controllers.HomeController (Employee).
+[2023-01-07 12:56:05.385 +05:30  INF]  Executing ViewResult, running view Index.
+[2023-01-07 12:56:05.494 +05:30  INF]  Executed ViewResult - view Index executed in 108.4214ms.
+[2023-01-07 12:56:05.499 +05:30  INF]  Executed action Database.Controllers.HomeController.Index (Employee) in 129.0217ms
+[2023-01-07 12:56:05.499 +05:30  INF]  Executed endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 12:56:05.505 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 344.9719ms
+[2023-01-07 12:56:05.534 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - -
+[2023-01-07 12:56:05.534 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+[2023-01-07 12:56:05.534 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - -
+[2023-01-07 12:56:05.540 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+[2023-01-07 12:56:05.541 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee.styles.css?v=1zBmUAqtmJGZ4iG0upJMx4OCtBwRsT0xXpZ3s3bh0xA - -
+[2023-01-07 12:56:05.560 +05:30  INF]  Sending file. Request path: '/Employee.styles.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\obj\Debug\net6.0\scopedcss\bundle\Employee.styles.css'
+[2023-01-07 12:56:05.560 +05:30  INF]  Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\css\site.css'
+[2023-01-07 12:56:05.561 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Employee.styles.css?v=1zBmUAqtmJGZ4iG0upJMx4OCtBwRsT0xXpZ3s3bh0xA - - - 0 1125 text/css 19.5288ms
+[2023-01-07 12:56:05.561 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 0 194 text/css 20.5257ms
+[2023-01-07 12:56:05.583 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+[2023-01-07 12:56:05.583 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+[2023-01-07 12:56:05.583 +05:30  INF]  Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\jquery\dist\jquery.min.js'
+[2023-01-07 12:56:05.586 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 52.5205ms
+[2023-01-07 12:56:05.586 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162720 text/css 52.2855ms
+[2023-01-07 12:56:05.586 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78468 application/javascript 52.4245ms
+[2023-01-07 12:56:15.066 +05:30  INF]  Request starting HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - -
+[2023-01-07 12:56:15.071 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 12:56:15.075 +05:30  INF]  Request finished HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - - - 204 - - 8.9811ms
+[2023-01-07 12:56:15.085 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee/GetAll - -
+[2023-01-07 12:56:15.085 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 12:56:15.115 +05:30  INF]  Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+[2023-01-07 12:56:15.116 +05:30  INF]  Executing endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 12:56:15.130 +05:30  INF]  Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAll() on controller Database.Controllers.EmployeeController (Employee).
+[2023-01-07 12:57:20.218 +05:30  INF]  Executed action Database.Controllers.EmployeeController.GetAll (Employee) in 65087.8434ms
+[2023-01-07 12:57:20.219 +05:30  INF]  Executed endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 12:57:20.271 +05:30  ERR]  An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:7031)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Database.Controllers.EmployeeController.GetAll() in C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\Controllers\EmployeeController.cs:line 40
+   at lambda_method24(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[2023-01-07 12:57:20.278 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Employee/GetAll - - - 500 - text/plain;+charset=utf-8 65193.8013ms
+[2023-01-07 12:57:29.184 +05:30  INF]  Request starting HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - -
+[2023-01-07 12:57:29.184 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 12:57:29.185 +05:30  INF]  Request finished HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - - - 204 - - 0.3533ms
+[2023-01-07 12:57:29.186 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee/GetAll - -
+[2023-01-07 12:57:29.187 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 12:57:29.193 +05:30  INF]  Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+[2023-01-07 12:57:29.193 +05:30  INF]  Executing endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 12:57:29.193 +05:30  INF]  Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAll() on controller Database.Controllers.EmployeeController (Employee).
+[2023-01-07 12:57:51.333 +05:30  INF]  Executed action Database.Controllers.EmployeeController.GetAll (Employee) in 22139.8487ms
+[2023-01-07 12:57:51.333 +05:30  INF]  Executed endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 12:57:51.342 +05:30  ERR]  An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:7031)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Database.Controllers.EmployeeController.GetAll() in C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\Controllers\EmployeeController.cs:line 40
+   at lambda_method24(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[2023-01-07 12:57:51.345 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Employee/GetAll - - - 500 - text/plain;+charset=utf-8 22158.9255ms
+[2023-01-07 12:58:08.886 +05:30  INF]  User profile is available. Using 'C:\Users\logesh.karthik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2023-01-07 12:58:09.298 +05:30  INF]  Now listening on: https://localhost:7256
+[2023-01-07 12:58:09.314 +05:30  INF]  Now listening on: http://localhost:5155
+[2023-01-07 12:58:09.328 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2023-01-07 12:58:09.330 +05:30  INF]  Hosting environment: Development
+[2023-01-07 12:58:09.331 +05:30  INF]  Content root path: C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\
+[2023-01-07 12:58:09.716 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/ - -
+[2023-01-07 12:58:09.877 +05:30  INF]  Executing endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 12:58:09.887 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Database.Controllers.HomeController (Employee).
+[2023-01-07 12:58:09.896 +05:30  INF]  Executing ViewResult, running view Index.
+[2023-01-07 12:58:09.991 +05:30  INF]  Executed ViewResult - view Index executed in 90.6159ms.
+[2023-01-07 12:58:09.996 +05:30  INF]  Executed action Database.Controllers.HomeController.Index (Employee) in 108.2446ms
+[2023-01-07 12:58:09.996 +05:30  INF]  Executed endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 12:58:10.007 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 293.1083ms
+[2023-01-07 12:58:10.033 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+[2023-01-07 12:58:10.033 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - -
+[2023-01-07 12:58:10.033 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - -
+[2023-01-07 12:58:10.069 +05:30  INF]  Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\jquery\dist\jquery.min.js'
+[2023-01-07 12:58:10.069 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+[2023-01-07 12:58:10.069 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+[2023-01-07 12:58:10.072 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78468 application/javascript 39.4857ms
+[2023-01-07 12:58:10.072 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 39.4858ms
+[2023-01-07 12:58:10.072 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162720 text/css 39.3264ms
+[2023-01-07 12:58:16.193 +05:30  INF]  Request starting HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - -
+[2023-01-07 12:58:16.200 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 12:58:16.203 +05:30  INF]  Request finished HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - - - 204 - - 10.1074ms
+[2023-01-07 12:58:16.206 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee/GetAll - -
+[2023-01-07 12:58:16.206 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 12:58:16.226 +05:30  INF]  Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+[2023-01-07 12:58:16.226 +05:30  INF]  Executing endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 12:58:16.238 +05:30  INF]  Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAll() on controller Database.Controllers.EmployeeController (Employee).
+[2023-01-07 12:58:20.526 +05:30  INF]  Executed action Database.Controllers.EmployeeController.GetAll (Employee) in 4287.576ms
+[2023-01-07 12:58:20.526 +05:30  INF]  Executed endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 12:58:20.596 +05:30  ERR]  An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:7031)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Database.Controllers.EmployeeController.GetAll() in C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\Controllers\EmployeeController.cs:line 40
+   at lambda_method24(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[2023-01-07 12:58:20.611 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Employee/GetAll - - - 500 - text/plain;+charset=utf-8 4405.0025ms
+[2023-01-07 12:59:46.112 +05:30  INF]  User profile is available. Using 'C:\Users\logesh.karthik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2023-01-07 12:59:46.311 +05:30  INF]  Now listening on: https://localhost:7256
+[2023-01-07 12:59:46.313 +05:30  INF]  Now listening on: http://localhost:5155
+[2023-01-07 12:59:46.321 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2023-01-07 12:59:46.324 +05:30  INF]  Hosting environment: Development
+[2023-01-07 12:59:46.326 +05:30  INF]  Content root path: C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\
+[2023-01-07 12:59:46.745 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/ - -
+[2023-01-07 12:59:46.915 +05:30  INF]  Executing endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 12:59:46.927 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Database.Controllers.HomeController (Employee).
+[2023-01-07 12:59:46.938 +05:30  INF]  Executing ViewResult, running view Index.
+[2023-01-07 12:59:47.073 +05:30  INF]  Executed ViewResult - view Index executed in 132.399ms.
+[2023-01-07 12:59:47.088 +05:30  INF]  Executed action Database.Controllers.HomeController.Index (Employee) in 159.7169ms
+[2023-01-07 12:59:47.104 +05:30  INF]  Executed endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 12:59:47.131 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 393.0339ms
+[2023-01-07 12:59:47.131 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - -
+[2023-01-07 12:59:47.132 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - -
+[2023-01-07 12:59:47.133 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+[2023-01-07 12:59:47.193 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+[2023-01-07 12:59:47.193 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+[2023-01-07 12:59:47.193 +05:30  INF]  Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\jquery\dist\jquery.min.js'
+[2023-01-07 12:59:47.197 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 65.1624ms
+[2023-01-07 12:59:47.197 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162720 text/css 65.8589ms
+[2023-01-07 12:59:47.197 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78468 application/javascript 63.9388ms
+[2023-01-07 12:59:54.482 +05:30  INF]  Request starting HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - -
+[2023-01-07 12:59:54.489 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 12:59:54.492 +05:30  INF]  Request finished HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - - - 204 - - 10.1564ms
+[2023-01-07 12:59:54.501 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee/GetAll - -
+[2023-01-07 12:59:54.501 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 12:59:54.517 +05:30  INF]  Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+[2023-01-07 12:59:54.518 +05:30  INF]  Executing endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 12:59:54.530 +05:30  INF]  Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAll() on controller Database.Controllers.EmployeeController (Employee).
+[2023-01-07 13:02:51.040 +05:30  INF]  User profile is available. Using 'C:\Users\logesh.karthik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2023-01-07 13:02:51.271 +05:30  INF]  Now listening on: https://localhost:7256
+[2023-01-07 13:02:51.273 +05:30  INF]  Now listening on: http://localhost:5155
+[2023-01-07 13:02:51.284 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2023-01-07 13:02:51.288 +05:30  INF]  Hosting environment: Development
+[2023-01-07 13:02:51.292 +05:30  INF]  Content root path: C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\
+[2023-01-07 13:02:51.722 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/ - -
+[2023-01-07 13:02:51.861 +05:30  INF]  Executing endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 13:02:51.871 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Database.Controllers.HomeController (Employee).
+[2023-01-07 13:02:51.880 +05:30  INF]  Executing ViewResult, running view Index.
+[2023-01-07 13:02:51.970 +05:30  INF]  Executed ViewResult - view Index executed in 86.8169ms.
+[2023-01-07 13:02:51.975 +05:30  INF]  Executed action Database.Controllers.HomeController.Index (Employee) in 103.1311ms
+[2023-01-07 13:02:51.975 +05:30  INF]  Executed endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 13:02:51.990 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 272.4463ms
+[2023-01-07 13:02:52.023 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - -
+[2023-01-07 13:02:52.023 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+[2023-01-07 13:02:52.024 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - -
+[2023-01-07 13:02:52.079 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+[2023-01-07 13:02:52.079 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+[2023-01-07 13:02:52.079 +05:30  INF]  Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\jquery\dist\jquery.min.js'
+[2023-01-07 13:02:52.082 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 58.9796ms
+[2023-01-07 13:02:52.082 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162720 text/css 58.6604ms
+[2023-01-07 13:02:52.082 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78468 application/javascript 58.9797ms
+[2023-01-07 13:02:58.956 +05:30  INF]  Request starting HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - -
+[2023-01-07 13:02:58.961 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 13:02:58.964 +05:30  INF]  Request finished HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - - - 204 - - 8.4754ms
+[2023-01-07 13:02:59.023 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee/GetAll - -
+[2023-01-07 13:02:59.024 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 13:02:59.047 +05:30  INF]  Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+[2023-01-07 13:02:59.047 +05:30  INF]  Executing endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 13:02:59.069 +05:30  INF]  Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAll() on controller Database.Controllers.EmployeeController (Employee).
+[2023-01-07 13:03:37.001 +05:30  INF]  User profile is available. Using 'C:\Users\logesh.karthik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2023-01-07 13:03:37.204 +05:30  INF]  Now listening on: https://localhost:7256
+[2023-01-07 13:03:37.205 +05:30  INF]  Now listening on: http://localhost:5155
+[2023-01-07 13:03:37.214 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2023-01-07 13:03:37.216 +05:30  INF]  Hosting environment: Development
+[2023-01-07 13:03:37.218 +05:30  INF]  Content root path: C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\
+[2023-01-07 13:03:37.466 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/ - -
+[2023-01-07 13:03:37.649 +05:30  INF]  Executing endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 13:03:37.659 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Database.Controllers.HomeController (Employee).
+[2023-01-07 13:03:37.670 +05:30  INF]  Executing ViewResult, running view Index.
+[2023-01-07 13:03:37.860 +05:30  INF]  Executed ViewResult - view Index executed in 176.3006ms.
+[2023-01-07 13:03:37.880 +05:30  INF]  Executed action Database.Controllers.HomeController.Index (Employee) in 219.9118ms
+[2023-01-07 13:03:37.881 +05:30  INF]  Executed endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 13:03:37.888 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 427.8044ms
+[2023-01-07 13:03:37.931 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+[2023-01-07 13:03:37.932 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - -
+[2023-01-07 13:03:37.962 +05:30  INF]  Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\jquery\dist\jquery.min.js'
+[2023-01-07 13:03:37.962 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+[2023-01-07 13:03:37.965 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 33.5146ms
+[2023-01-07 13:03:37.965 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78468 application/javascript 34.2039ms
+[2023-01-07 13:03:52.840 +05:30  INF]  Request starting HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - -
+[2023-01-07 13:03:52.850 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 13:03:52.853 +05:30  INF]  Request finished HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - - - 204 - - 12.4449ms
+[2023-01-07 13:03:52.878 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee/GetAll - -
+[2023-01-07 13:03:52.878 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 13:03:53.566 +05:30  INF]  Executing endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 13:03:53.610 +05:30  INF]  Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAll() on controller Database.Controllers.EmployeeController (Employee).
+[2023-01-07 13:04:03.019 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee/GetAll - -
+[2023-01-07 13:04:03.019 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 13:04:14.552 +05:30  INF]  Executing endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 13:04:14.552 +05:30  INF]  Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAll() on controller Database.Controllers.EmployeeController (Employee).
+[2023-01-07 13:05:00.187 +05:30  INF]  Executed action Database.Controllers.EmployeeController.GetAll (Employee) in 45628.2822ms
+[2023-01-07 13:05:00.187 +05:30  INF]  Executed action Database.Controllers.EmployeeController.GetAll (Employee) in 66576.5897ms
+[2023-01-07 13:05:00.190 +05:30  INF]  Executed endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 13:05:00.190 +05:30  INF]  Executed endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 13:05:00.250 +05:30  ERR]  An unhandled exception has occurred while executing the request.
+System.FormatException: The format of value 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKV1RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiI5NDExYTdmNS05MjJlLTQwN2MtYWMzYS1hOTc1MDZiNTI2M2QiLCJpYXQiOiIwNy0wMS0yMDIzIDA3OjMzOjUyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoic21pdGhAYXNwaXJlLmNvbSIsIlVzZXJJZCI6IjEiLCJleHAiOjE2NzMwOTg0MzIsImlzcyI6IkpXVEF1dGhlbnRpY2F0aW9uU2VydmVyIiwiYXVkIjoiSldUU2VydmljZVBvc3RtYW5DbGllbnQifQ.bpPMIlaNrbB230vsBNDN3YX_c2Ol9pvok1vWUJqhYF0' is invalid.
+   at System.Net.Http.Headers.HeaderUtilities.CheckValidToken(String value, String parameterName)
+   at System.Net.Http.Headers.AuthenticationHeaderValue..ctor(String scheme, String parameter)
+   at System.Net.Http.Headers.AuthenticationHeaderValue..ctor(String scheme)
+   at Database.Controllers.EmployeeController.GetAll() in C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\Controllers\EmployeeController.cs:line 39
+   at lambda_method28(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[2023-01-07 13:05:00.250 +05:30  ERR]  An unhandled exception has occurred while executing the request.
+System.FormatException: The format of value 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKV1RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiI5NDExYTdmNS05MjJlLTQwN2MtYWMzYS1hOTc1MDZiNTI2M2QiLCJpYXQiOiIwNy0wMS0yMDIzIDA3OjMzOjUyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoic21pdGhAYXNwaXJlLmNvbSIsIlVzZXJJZCI6IjEiLCJleHAiOjE2NzMwOTg0MzIsImlzcyI6IkpXVEF1dGhlbnRpY2F0aW9uU2VydmVyIiwiYXVkIjoiSldUU2VydmljZVBvc3RtYW5DbGllbnQifQ.bpPMIlaNrbB230vsBNDN3YX_c2Ol9pvok1vWUJqhYF0' is invalid.
+   at System.Net.Http.Headers.HeaderUtilities.CheckValidToken(String value, String parameterName)
+   at System.Net.Http.Headers.AuthenticationHeaderValue..ctor(String scheme, String parameter)
+   at System.Net.Http.Headers.AuthenticationHeaderValue..ctor(String scheme)
+   at Database.Controllers.EmployeeController.GetAll() in C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\Controllers\EmployeeController.cs:line 39
+   at lambda_method28(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[2023-01-07 13:05:00.257 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Employee/GetAll - - - 500 - text/plain;+charset=utf-8 67379.7373ms
+[2023-01-07 13:05:00.257 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Employee/GetAll - - - 500 - text/plain;+charset=utf-8 57238.7245ms
+[2023-01-07 13:06:03.155 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/api/swagger/index.html - -
+[2023-01-07 13:06:03.341 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/api/swagger/index.html - - - 200 - text/html;charset=utf-8 185.5889ms
+[2023-01-07 13:06:03.424 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/api/swagger/swagger-ui-bundle.js - -
+[2023-01-07 13:06:03.424 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/api/swagger/swagger-ui-standalone-preset.js - -
+[2023-01-07 13:06:03.424 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/api/swagger/swagger-ui.css - -
+[2023-01-07 13:06:03.449 +05:30  INF]  Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+[2023-01-07 13:06:03.453 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/api/swagger/swagger-ui.css - - - 200 143943 text/css 29.2117ms
+[2023-01-07 13:06:03.458 +05:30  INF]  Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+[2023-01-07 13:06:03.458 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/api/swagger/swagger-ui-standalone-preset.js - - - 200 339486 application/javascript 33.9314ms
+[2023-01-07 13:06:03.475 +05:30  INF]  Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+[2023-01-07 13:06:03.476 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/api/swagger/swagger-ui-bundle.js - - - 200 1096145 application/javascript 51.7721ms
+[2023-01-07 13:06:03.653 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/api/swagger/favicon-32x32.png - -
+[2023-01-07 13:06:03.653 +05:30  INF]  Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+[2023-01-07 13:06:03.653 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/api/swagger/favicon-32x32.png - - - 200 628 image/png 0.3993ms
+[2023-01-07 13:06:03.695 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - -
+[2023-01-07 13:06:03.939 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 245.3295ms
+[2023-01-07 13:06:37.970 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7256/Token?Email=smith%40aspire.com&Password=smith%40123 - 0
+[2023-01-07 13:06:37.970 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 13:06:37.970 +05:30  INF]  Executing endpoint 'Database.Controllers.TokenController.Token (Employee)'
+[2023-01-07 13:06:37.992 +05:30  INF]  Route matched with {action = "Token", controller = "Token"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Token(Database.Models.Login) on controller Database.Controllers.TokenController (Employee).
+[2023-01-07 13:06:38.508 +05:30  INF]  Executing JsonResult, writing value of type '<>f__AnonymousType0`3[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[2023-01-07 13:06:38.525 +05:30  INF]  Executed action Database.Controllers.TokenController.Token (Employee) in 532.9568ms
+[2023-01-07 13:06:38.525 +05:30  INF]  Executed endpoint 'Database.Controllers.TokenController.Token (Employee)'
+[2023-01-07 13:06:38.525 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7256/Token?Email=smith%40aspire.com&Password=smith%40123 - 0 - 200 - application/json;+charset=utf-8 555.6353ms
+[2023-01-07 13:10:44.264 +05:30  INF]  User profile is available. Using 'C:\Users\logesh.karthik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2023-01-07 13:10:44.515 +05:30  INF]  Now listening on: https://localhost:7256
+[2023-01-07 13:10:44.517 +05:30  INF]  Now listening on: http://localhost:5155
+[2023-01-07 13:10:44.527 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2023-01-07 13:10:44.529 +05:30  INF]  Hosting environment: Development
+[2023-01-07 13:10:44.531 +05:30  INF]  Content root path: C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\
+[2023-01-07 13:10:44.950 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/ - -
+[2023-01-07 13:10:45.090 +05:30  INF]  Executing endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 13:10:45.101 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Database.Controllers.HomeController (Employee).
+[2023-01-07 13:10:45.113 +05:30  INF]  Executing ViewResult, running view Index.
+[2023-01-07 13:10:45.203 +05:30  INF]  Executed ViewResult - view Index executed in 88.6083ms.
+[2023-01-07 13:10:45.206 +05:30  INF]  Executed action Database.Controllers.HomeController.Index (Employee) in 103.9759ms
+[2023-01-07 13:10:45.206 +05:30  INF]  Executed endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 13:10:45.213 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 266.5495ms
+[2023-01-07 13:10:45.233 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+[2023-01-07 13:10:45.233 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - -
+[2023-01-07 13:10:45.272 +05:30  INF]  Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\jquery\dist\jquery.min.js'
+[2023-01-07 13:10:45.272 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+[2023-01-07 13:10:45.275 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 42.2071ms
+[2023-01-07 13:10:45.275 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78468 application/javascript 42.3712ms
+[2023-01-07 13:10:52.512 +05:30  INF]  Request starting HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - -
+[2023-01-07 13:10:52.521 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 13:10:52.524 +05:30  INF]  Request finished HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - - - 204 - - 12.1870ms
+[2023-01-07 13:10:52.526 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee/GetAll - -
+[2023-01-07 13:10:52.526 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 13:10:52.811 +05:30  INF]  Executing endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 13:10:52.827 +05:30  INF]  Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAll() on controller Database.Controllers.EmployeeController (Employee).
+[2023-01-07 13:10:56.024 +05:30  INF]  Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[Database.Models.Employee, Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2023-01-07 13:10:56.070 +05:30  INF]  Executed action Database.Controllers.EmployeeController.GetAll (Employee) in 3242.2383ms
+[2023-01-07 13:10:56.070 +05:30  INF]  Executed endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 13:10:56.072 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Employee/GetAll - - - 200 - application/json;+charset=utf-8 3545.5875ms
+[2023-01-07 13:11:20.743 +05:30  INF]  User profile is available. Using 'C:\Users\logesh.karthik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2023-01-07 13:11:21.015 +05:30  INF]  Now listening on: https://localhost:7256
+[2023-01-07 13:11:21.017 +05:30  INF]  Now listening on: http://localhost:5155
+[2023-01-07 13:11:21.027 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2023-01-07 13:11:21.029 +05:30  INF]  Hosting environment: Development
+[2023-01-07 13:11:21.032 +05:30  INF]  Content root path: C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\
+[2023-01-07 13:11:21.829 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/ - -
+[2023-01-07 13:11:22.031 +05:30  INF]  Executing endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 13:11:22.043 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Database.Controllers.HomeController (Employee).
+[2023-01-07 13:11:22.056 +05:30  INF]  Executing ViewResult, running view Index.
+[2023-01-07 13:11:22.511 +05:30  INF]  Executed ViewResult - view Index executed in 455.3899ms.
+[2023-01-07 13:11:22.515 +05:30  INF]  Executed action Database.Controllers.HomeController.Index (Employee) in 470.9674ms
+[2023-01-07 13:11:22.515 +05:30  INF]  Executed endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 13:11:22.523 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 697.9713ms
+[2023-01-07 13:11:22.549 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - -
+[2023-01-07 13:11:22.561 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+[2023-01-07 13:11:22.562 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - -
+[2023-01-07 13:11:22.619 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+[2023-01-07 13:11:22.619 +05:30  INF]  Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\jquery\dist\jquery.min.js'
+[2023-01-07 13:11:22.619 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+[2023-01-07 13:11:22.623 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 73.8939ms
+[2023-01-07 13:11:22.623 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162720 text/css 61.1855ms
+[2023-01-07 13:11:22.623 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78468 application/javascript 62.1981ms
+[2023-01-07 13:11:25.652 +05:30  INF]  Request starting HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - -
+[2023-01-07 13:11:25.678 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 13:11:25.688 +05:30  INF]  Request finished HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - - - 204 - - 37.6493ms
+[2023-01-07 13:11:25.690 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee/GetAll - -
+[2023-01-07 13:11:25.691 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 13:11:26.201 +05:30  INF]  Executing endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 13:11:26.229 +05:30  INF]  Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAll() on controller Database.Controllers.EmployeeController (Employee).
+[2023-01-07 13:11:33.346 +05:30  INF]  Executed action Database.Controllers.EmployeeController.GetAll (Employee) in 7116.6506ms
+[2023-01-07 13:11:33.348 +05:30  INF]  Executed endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 13:11:33.416 +05:30  ERR]  An unhandled exception has occurred while executing the request.
+System.FormatException: The format of value 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKV1RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiI5NDExYTdmNS05MjJlLTQwN2MtYWMzYS1hOTc1MDZiNTI2M2QiLCJpYXQiOiIwNy0wMS0yMDIzIDA3OjMzOjUyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoic21pdGhAYXNwaXJlLmNvbSIsIlVzZXJJZCI6IjEiLCJleHAiOjE2NzMwOTg0MzIsImlzcyI6IkpXVEF1dGhlbnRpY2F0aW9uU2VydmVyIiwiYXVkIjoiSldUU2VydmljZVBvc3RtYW5DbGllbnQifQ.bpPMIlaNrbB230vsBNDN3YX_c2Ol9pvok1vWUJqhYF0' is invalid.
+   at System.Net.Http.Headers.HeaderUtilities.CheckValidToken(String value, String parameterName)
+   at System.Net.Http.Headers.AuthenticationHeaderValue..ctor(String scheme, String parameter)
+   at System.Net.Http.Headers.AuthenticationHeaderValue..ctor(String scheme)
+   at Database.Controllers.EmployeeController.GetAll() in C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\Controllers\EmployeeController.cs:line 39
+   at lambda_method28(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[2023-01-07 13:11:33.423 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Employee/GetAll - - - 500 - text/plain;+charset=utf-8 7732.9958ms
+[2023-01-07 13:12:06.152 +05:30  INF]  User profile is available. Using 'C:\Users\logesh.karthik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2023-01-07 13:12:06.339 +05:30  INF]  Now listening on: https://localhost:7256
+[2023-01-07 13:12:06.341 +05:30  INF]  Now listening on: http://localhost:5155
+[2023-01-07 13:12:06.348 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2023-01-07 13:12:06.350 +05:30  INF]  Hosting environment: Development
+[2023-01-07 13:12:06.351 +05:30  INF]  Content root path: C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\
+[2023-01-07 13:12:06.752 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/ - -
+[2023-01-07 13:12:07.051 +05:30  INF]  Executing endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 13:12:07.068 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Database.Controllers.HomeController (Employee).
+[2023-01-07 13:12:07.079 +05:30  INF]  Executing ViewResult, running view Index.
+[2023-01-07 13:12:07.206 +05:30  INF]  Executed ViewResult - view Index executed in 126.8542ms.
+[2023-01-07 13:12:07.209 +05:30  INF]  Executed action Database.Controllers.HomeController.Index (Employee) in 140.9679ms
+[2023-01-07 13:12:07.209 +05:30  INF]  Executed endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 13:12:07.281 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - -
+[2023-01-07 13:12:07.281 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+[2023-01-07 13:12:07.282 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - -
+[2023-01-07 13:12:07.285 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 544.6398ms
+[2023-01-07 13:12:07.334 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+[2023-01-07 13:12:07.334 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+[2023-01-07 13:12:07.334 +05:30  INF]  Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\jquery\dist\jquery.min.js'
+[2023-01-07 13:12:07.337 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162720 text/css 55.1980ms
+[2023-01-07 13:12:07.337 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 55.2685ms
+[2023-01-07 13:12:07.337 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78468 application/javascript 55.1981ms
+[2023-01-07 13:12:11.819 +05:30  INF]  Request starting HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - -
+[2023-01-07 13:12:11.831 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 13:12:11.834 +05:30  INF]  Request finished HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - - - 204 - - 14.2143ms
+[2023-01-07 13:12:11.839 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee/GetAll - -
+[2023-01-07 13:12:11.839 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 13:12:12.296 +05:30  INF]  Executing endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 13:12:12.322 +05:30  INF]  Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAll() on controller Database.Controllers.EmployeeController (Employee).
+[2023-01-07 13:12:18.544 +05:30  INF]  Executed action Database.Controllers.EmployeeController.GetAll (Employee) in 6221.8941ms
+[2023-01-07 13:12:18.546 +05:30  INF]  Executed endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 13:12:18.630 +05:30  ERR]  An unhandled exception has occurred while executing the request.
+System.FormatException: The format of value 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKV1RTZXJ2aWNlQWNjZXNzVG9rZW4iLCJqdGkiOiI5NDExYTdmNS05MjJlLTQwN2MtYWMzYS1hOTc1MDZiNTI2M2QiLCJpYXQiOiIwNy0wMS0yMDIzIDA3OjMzOjUyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoic21pdGhAYXNwaXJlLmNvbSIsIlVzZXJJZCI6IjEiLCJleHAiOjE2NzMwOTg0MzIsImlzcyI6IkpXVEF1dGhlbnRpY2F0aW9uU2VydmVyIiwiYXVkIjoiSldUU2VydmljZVBvc3RtYW5DbGllbnQifQ.bpPMIlaNrbB230vsBNDN3YX_c2Ol9pvok1vWUJqhYF0' is invalid.
+   at System.Net.Http.Headers.HeaderUtilities.CheckValidToken(String value, String parameterName)
+   at System.Net.Http.Headers.AuthenticationHeaderValue..ctor(String scheme, String parameter)
+   at System.Net.Http.Headers.AuthenticationHeaderValue..ctor(String scheme)
+   at Database.Controllers.EmployeeController.GetAll() in C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\Controllers\EmployeeController.cs:line 39
+   at lambda_method28(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[2023-01-07 13:12:18.637 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Employee/GetAll - - - 500 - text/plain;+charset=utf-8 6798.4019ms
+[2023-01-07 13:12:51.061 +05:30  INF]  User profile is available. Using 'C:\Users\logesh.karthik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2023-01-07 13:12:51.237 +05:30  INF]  Now listening on: https://localhost:7256
+[2023-01-07 13:12:51.238 +05:30  INF]  Now listening on: http://localhost:5155
+[2023-01-07 13:12:51.247 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2023-01-07 13:12:51.249 +05:30  INF]  Hosting environment: Development
+[2023-01-07 13:12:51.251 +05:30  INF]  Content root path: C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\
+[2023-01-07 13:12:51.843 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/ - -
+[2023-01-07 13:12:52.019 +05:30  INF]  Executing endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 13:12:52.032 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Database.Controllers.HomeController (Employee).
+[2023-01-07 13:12:52.043 +05:30  INF]  Executing ViewResult, running view Index.
+[2023-01-07 13:12:52.161 +05:30  INF]  Executed ViewResult - view Index executed in 117.1557ms.
+[2023-01-07 13:12:52.164 +05:30  INF]  Executed action Database.Controllers.HomeController.Index (Employee) in 131.697ms
+[2023-01-07 13:12:52.164 +05:30  INF]  Executed endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 13:12:52.172 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 342.4354ms
+[2023-01-07 13:12:52.220 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+[2023-01-07 13:12:52.220 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - -
+[2023-01-07 13:12:52.254 +05:30  INF]  Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\jquery\dist\jquery.min.js'
+[2023-01-07 13:12:52.254 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+[2023-01-07 13:12:52.257 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78468 application/javascript 36.9621ms
+[2023-01-07 13:12:52.257 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 36.9037ms
+[2023-01-07 13:12:59.756 +05:30  INF]  Request starting HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - -
+[2023-01-07 13:12:59.763 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 13:12:59.766 +05:30  INF]  Request finished HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - - - 204 - - 9.0690ms
+[2023-01-07 13:12:59.768 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee/GetAll - -
+[2023-01-07 13:12:59.769 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 13:13:00.155 +05:30  INF]  Executing endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 13:13:00.163 +05:30  INF]  Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAll() on controller Database.Controllers.EmployeeController (Employee).
+[2023-01-07 13:13:46.424 +05:30  INF]  Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[Database.Models.Employee, Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2023-01-07 13:13:48.841 +05:30  INF]  Executed action Database.Controllers.EmployeeController.GetAll (Employee) in 48677.3128ms
+[2023-01-07 13:13:48.842 +05:30  INF]  Executed endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 13:13:48.844 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Employee/GetAll - - - 200 - application/json;+charset=utf-8 49076.1984ms
+[2023-01-07 13:14:28.508 +05:30  INF]  User profile is available. Using 'C:\Users\logesh.karthik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2023-01-07 13:14:28.778 +05:30  INF]  Now listening on: https://localhost:7256
+[2023-01-07 13:14:28.780 +05:30  INF]  Now listening on: http://localhost:5155
+[2023-01-07 13:14:28.789 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2023-01-07 13:14:28.790 +05:30  INF]  Hosting environment: Development
+[2023-01-07 13:14:28.791 +05:30  INF]  Content root path: C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\
+[2023-01-07 13:14:29.179 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/ - -
+[2023-01-07 13:14:29.342 +05:30  INF]  Executing endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 13:14:29.352 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Database.Controllers.HomeController (Employee).
+[2023-01-07 13:14:29.360 +05:30  INF]  Executing ViewResult, running view Index.
+[2023-01-07 13:14:29.556 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - -
+[2023-01-07 13:14:29.556 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+[2023-01-07 13:14:29.557 +05:30  INF]  Executed ViewResult - view Index executed in 118.6574ms.
+[2023-01-07 13:14:29.561 +05:30  INF]  Executed action Database.Controllers.HomeController.Index (Employee) in 207.9613ms
+[2023-01-07 13:14:29.561 +05:30  INF]  Executed endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 13:14:29.568 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 393.8893ms
+[2023-01-07 13:14:29.673 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+[2023-01-07 13:14:29.682 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78468 application/javascript 125.9542ms
+[2023-01-07 13:14:29.690 +05:30  INF]  Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\jquery\dist\jquery.min.js'
+[2023-01-07 13:14:29.701 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 134.0181ms
+[2023-01-07 13:14:53.731 +05:30  INF]  Request starting HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - -
+[2023-01-07 13:14:53.738 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 13:14:53.744 +05:30  INF]  Request finished HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - - - 204 - - 12.7658ms
+[2023-01-07 13:14:55.440 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee/GetAll - -
+[2023-01-07 13:14:55.443 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 13:14:56.322 +05:30  INF]  Executing endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 13:14:56.350 +05:30  INF]  Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAll() on controller Database.Controllers.EmployeeController (Employee).
+[2023-01-07 13:15:27.859 +05:30  INF]  Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[Database.Models.Employee, Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2023-01-07 13:15:27.957 +05:30  INF]  Executed action Database.Controllers.EmployeeController.GetAll (Employee) in 31606.9497ms
+[2023-01-07 13:15:27.959 +05:30  INF]  Executed endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 13:15:27.960 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Employee/GetAll - - - 200 - application/json;+charset=utf-8 32519.5778ms
+[2023-01-07 13:17:00.893 +05:30  INF]  User profile is available. Using 'C:\Users\logesh.karthik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2023-01-07 13:17:01.282 +05:30  INF]  Now listening on: https://localhost:7256
+[2023-01-07 13:17:01.284 +05:30  INF]  Now listening on: http://localhost:5155
+[2023-01-07 13:17:01.296 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2023-01-07 13:17:01.298 +05:30  INF]  Hosting environment: Development
+[2023-01-07 13:17:01.302 +05:30  INF]  Content root path: C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\
+[2023-01-07 13:17:01.968 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/ - -
+[2023-01-07 13:17:02.335 +05:30  INF]  Executing endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 13:17:02.343 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Database.Controllers.HomeController (Employee).
+[2023-01-07 13:17:02.358 +05:30  INF]  Executing ViewResult, running view Index.
+[2023-01-07 13:17:02.481 +05:30  INF]  Executed ViewResult - view Index executed in 115.6889ms.
+[2023-01-07 13:17:02.485 +05:30  INF]  Executed action Database.Controllers.HomeController.Index (Employee) in 141.4934ms
+[2023-01-07 13:17:02.485 +05:30  INF]  Executed endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-07 13:17:02.492 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 532.8105ms
+[2023-01-07 13:17:02.522 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - -
+[2023-01-07 13:17:02.523 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - -
+[2023-01-07 13:17:02.524 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+[2023-01-07 13:17:02.591 +05:30  INF]  Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\jquery\dist\jquery.min.js'
+[2023-01-07 13:17:02.591 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+[2023-01-07 13:17:02.591 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+[2023-01-07 13:17:02.597 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 73.6412ms
+[2023-01-07 13:17:02.597 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78468 application/javascript 73.3947ms
+[2023-01-07 13:17:02.598 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162720 text/css 75.3564ms
+[2023-01-07 13:17:30.019 +05:30  INF]  Request starting HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - -
+[2023-01-07 13:17:30.033 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 13:17:30.036 +05:30  INF]  Request finished HTTP/2 OPTIONS https://localhost:7256/Employee/GetAll - - - 204 - - 17.5577ms
+[2023-01-07 13:17:30.090 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee/GetAll - -
+[2023-01-07 13:17:30.091 +05:30  INF]  CORS policy execution successful.
+[2023-01-07 13:17:31.169 +05:30  INF]  Executing endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 13:17:31.180 +05:30  INF]  Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetAll() on controller Database.Controllers.EmployeeController (Employee).
+[2023-01-07 13:22:05.602 +05:30  INF]  Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[Database.Models.Employee, Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2023-01-07 13:22:05.639 +05:30  INF]  Executed action Database.Controllers.EmployeeController.GetAll (Employee) in 274459.0863ms
+[2023-01-07 13:22:05.640 +05:30  INF]  Executed endpoint 'Database.Controllers.EmployeeController.GetAll (Employee)'
+[2023-01-07 13:22:05.641 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Employee/GetAll - - - 0 - application/json;+charset=utf-8 275550.6187ms

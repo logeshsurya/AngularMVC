@@ -87,11 +87,6 @@ C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\obj\Debug\
 C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\bin\Debug\net6.0\System.Net.Http.Formatting.dll
 C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
-C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\bin\Debug\net6.0\WebApi.deps.json
-C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\bin\Debug\net6.0\WebApi.runtimeconfig.json
-C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\bin\Debug\net6.0\WebApi.exe
-C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\bin\Debug\net6.0\WebApi.dll
-C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\bin\Debug\net6.0\WebApi.pdb
 C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
@@ -99,4 +94,5 @@ C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\bin\Debug\
 C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\bin\Debug\net6.0\WebApi.xml
+C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\employee\bin\Debug\net6.0\Employee.xml
+C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\employee\obj\Debug\net6.0\Employee.xml

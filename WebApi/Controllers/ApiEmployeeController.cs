@@ -1,9 +1,11 @@
 using Database.DataAccessLayer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers
 {
-    
+    [Authorize]
+    // [AllowAnonymous]
     [ApiController]
     [Route("api/[controller]")]
     public class ApiEmployeeController : ControllerBase

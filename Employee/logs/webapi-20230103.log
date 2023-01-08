@@ -1,0 +1,40 @@
+[2023-01-03 15:04:06.414 +05:30  INF]  User profile is available. Using 'C:\Users\logesh.karthik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2023-01-03 15:04:06.665 +05:30  INF]  Now listening on: https://localhost:7256
+[2023-01-03 15:04:06.668 +05:30  INF]  Now listening on: http://localhost:5155
+[2023-01-03 15:04:06.680 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2023-01-03 15:04:06.682 +05:30  INF]  Hosting environment: Development
+[2023-01-03 15:04:06.686 +05:30  INF]  Content root path: C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\
+[2023-01-03 15:04:07.245 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/ - -
+[2023-01-03 15:04:07.380 +05:30  INF]  Executing endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-03 15:04:07.398 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Database.Controllers.HomeController (Employee).
+[2023-01-03 15:04:07.422 +05:30  INF]  Executing ViewResult, running view Index.
+[2023-01-03 15:04:07.650 +05:30  INF]  Executed ViewResult - view Index executed in 232.366ms.
+[2023-01-03 15:04:07.654 +05:30  INF]  Executed action Database.Controllers.HomeController.Index (Employee) in 255.229ms
+[2023-01-03 15:04:07.654 +05:30  INF]  Executed endpoint 'Database.Controllers.HomeController.Index (Employee)'
+[2023-01-03 15:04:07.666 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/ - - - 200 - text/html;+charset=utf-8 425.3689ms
+[2023-01-03 15:04:07.704 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - -
+[2023-01-03 15:04:07.704 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - -
+[2023-01-03 15:04:07.704 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - -
+[2023-01-03 15:04:07.704 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/Employee.styles.css?v=1zBmUAqtmJGZ4iG0upJMx4OCtBwRsT0xXpZ3s3bh0xA - -
+[2023-01-03 15:04:07.704 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+[2023-01-03 15:04:07.732 +05:30  INF]  Sending file. Request path: '/Employee.styles.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\obj\Debug\net6.0\scopedcss\bundle\Employee.styles.css'
+[2023-01-03 15:04:07.732 +05:30  INF]  Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\css\site.css'
+[2023-01-03 15:04:07.733 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/css/site.css?v=AKvNjO3dCPPS0eSU1Ez8T2wI280i08yGycV9ndytL-c - - - 200 194 text/css 29.0634ms
+[2023-01-03 15:04:07.733 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/Employee.styles.css?v=1zBmUAqtmJGZ4iG0upJMx4OCtBwRsT0xXpZ3s3bh0xA - - - 200 1125 text/css 28.9515ms
+[2023-01-03 15:04:07.733 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+[2023-01-03 15:04:07.750 +05:30  INF]  Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\js\site.js'
+[2023-01-03 15:04:07.751 +05:30  INF]  Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\jquery\dist\jquery.min.js'
+[2023-01-03 15:04:07.752 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+[2023-01-03 15:04:07.753 +05:30  INF]  Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+[2023-01-03 15:04:07.755 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 22.1930ms
+[2023-01-03 15:04:07.755 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78468 application/javascript 51.2700ms
+[2023-01-03 15:04:07.755 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 51.5573ms
+[2023-01-03 15:04:07.771 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 162720 text/css 66.7222ms
+[2023-01-03 15:04:07.806 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/favicon.ico - -
+[2023-01-03 15:04:07.815 +05:30  INF]  Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\favicon.ico'
+[2023-01-03 15:04:07.816 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/favicon.ico - - - 200 5430 image/x-icon 10.0757ms
+[2023-01-03 15:06:08.705 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/swagger - -
+[2023-01-03 15:06:08.710 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/swagger - - - 404 0 - 5.0698ms
+[2023-01-03 15:06:08.778 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7256/favicon.ico - -
+[2023-01-03 15:06:08.781 +05:30  INF]  Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\logesh.karthik\Desktop\Github\AngularMVC\AngularMVC\Employee\wwwroot\favicon.ico'
+[2023-01-03 15:06:08.781 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7256/favicon.ico - - - 200 5430 image/x-icon 3.0857ms

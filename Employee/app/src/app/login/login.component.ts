@@ -37,8 +37,8 @@ export class LoginComponent implements OnInit {
         next: (data) => {
           console.log(data);
       
-         // LoginService.SetDateWithExpiry("token", data.token, data.expiryInMinutes)
-          //LoginService.SetDateWithExpiry("User", data.userId, data.expiryInMinutes)
+          LoginService.SetDateWithExpiry("token", data.token, data.expiryInMinutes)
+          // LoginService.SetDateWithExpiry("User", data.userId, data.expiryInMinutes)
     
 
           

@@ -103,7 +103,8 @@
     <div class="row">
         <div class="employee row">
             <button [routerLink]="['../create-employee']" class="col-auto btn btn-sm btn-primary button" >Add Employee</button>
-            <button (click)="clearSelection()" class="col-auto btn btn-sm btn-warning ">Clear</button>    
+            <button (click)="clearSelection()" class="col-auto btn btn-sm btn-warning ">Clear</button>   
+            <input type="text" id="filter-text-box" class="col-auto" placeholder="Search..." (input)="onFilterTextBoxChanged()" /> 
         </div>
         <br>
         <ag-grid-angular 
@@ -122,6 +123,7 @@
         [rowSelection]="'multiple'" 
         [animateRows]="true"
         [pagination]="true"
+        [cacheQuickFilter]="true"
         [paginationAutoPageSize]="true"
         >
     </ag-grid-angular>

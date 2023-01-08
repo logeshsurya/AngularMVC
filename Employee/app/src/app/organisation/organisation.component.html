@@ -1,4 +1,4 @@
-
+<!-- 
 <div class="container tablecontainer">
     <div class="container container-fluid">
         <div>
@@ -41,5 +41,39 @@
             <p class="no-records" *ngIf="result.length == 0">No Records found</p>
             <pagination-controls class="paginate" *ngIf="result.length != 0" (pageChange)="page = $event"></pagination-controls>  
           </ng-container>
+    </div>
+</div> -->
+
+
+<div class="container tablecontainer">
+    <div class="container container-fluid">
+    <h2 class="header">Organisation Details</h2>
+    <hr>
+    <div class="row">
+        <div class="employee row">
+            <button [routerLink]="['../create-organisation']" class="col-auto btn btn-sm btn-primary button" >Add Organisation</button>
+            <button (click)="clearSelection()" class="col-auto btn btn-sm btn-warning ">Clear</button>    
+        </div>
+        <br>
+        <ag-grid-angular 
+        class="ag-theme-alpine" 
+     
+        [columnDefs]="columnDefs"
+        [defaultColDef]="defaultColDef"
+        [enableRangeSelection]="true"
+        [rowData]="rowData"
+        (gridReady)="onGridReady($event)"
+        (rowEditingStopped)="onRowEditingStopped($event)"
+        (rowEditingStarted)="onRowEditingStarted($event)"
+        (cellClicked)="onCellClicked($event)"
+        editType="fullRow"
+        [suppressClickEdit]="true"
+        [rowSelection]="'multiple'" 
+        [animateRows]="true"
+        [pagination]="true"
+        [paginationAutoPageSize]="true"
+        >
+    </ag-grid-angular>
+    </div>
     </div>
 </div>

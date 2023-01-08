@@ -71,11 +71,11 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
     };
 });
 
-builder.Services.AddSwaggerGen(options =>
-{
-    var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
-});
+// builder.Services.AddSwaggerGen(options =>
+// {
+//     var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+//     options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
+// });
 
 builder.Services.AddHttpLogging(httpLogging =>
 {

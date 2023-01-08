@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qaUNGK1SmyhYuwPyxHCaZ9DwvCaklbz52mwYYNsyd1863CwUxrPkh5ggsgARyO78ea8y5h9MU10F3nwtmEQnVg==",
+  "dgSpecHash": "Mzyc29PhKRRwufoIdnQ9uxCIC+0E0fnjjPVseR3TBRnrtzJZdosbLA+bX2kkz6EJW6r0Bk2mDld8TQwtqFhJ7w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\Webapi\\WebApi.csproj",
+  "projectFilePath": "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\webapi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\logesh.karthik\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.9\\microsoft.aspnet.webapi.client.5.2.9.nupkg.sha512",
     "C:\\Users\\logesh.karthik\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.6\\microsoft.aspnetcore.authentication.jwtbearer.6.0.6.nupkg.sha512",

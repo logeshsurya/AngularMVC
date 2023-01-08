@@ -2368,27 +2368,6 @@
         "runtime": {
           "bin/placeholder/Database.dll": {}
         }
-      },
-      "WebApi/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Database": "1.0.0",
-          "Microsoft.AspNet.WebApi.Client": "5.2.9",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.6",
-          "Microsoft.AspNetCore.Cors": "2.2.0",
-          "Swashbuckle.AspNetCore": "6.2.3",
-          "System.Net.Http": "4.3.4"
-        },
-        "compile": {
-          "bin/placeholder/WebApi.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/WebApi.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
       }
     }
   },
@@ -8071,17 +8050,13 @@
       "type": "project",
       "path": "../Database/Database.csproj",
       "msbuildProject": "../Database/Database.csproj"
-    },
-    "WebApi/1.0.0": {
-      "type": "project",
-      "path": "../WebApi/WebApi.csproj",
-      "msbuildProject": "../WebApi/WebApi.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Database >= 1.0.0",
       "Microsoft.AspNet.WebApi.Client >= 5.2.9",
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.6",
       "Microsoft.AspNetCore.Cors >= 2.2.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.Configuration.Binder >= 7.0.0",
@@ -8096,7 +8071,6 @@
       "System.Configuration.ConfigurationManager >= 7.0.0",
       "System.Data.SqlClient >= 4.8.5",
       "System.Net.Http >= 4.3.4",
-      "WebApi >= 1.0.0",
       "serilog.aspnetcore >= 5.0.0",
       "serilog.expressions >= 3.3.0",
       "serilog.sinks.seq >= 5.1.1"
@@ -8129,9 +8103,6 @@
           "projectReferences": {
             "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\Database\\Database.csproj": {
               "projectPath": "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\Database\\Database.csproj"
-            },
-            "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\WebApi\\WebApi.csproj": {
-              "projectPath": "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\WebApi\\WebApi.csproj"
             }
           }
         }
@@ -8149,6 +8120,10 @@
           "Microsoft.AspNet.WebApi.Client": {
             "target": "Package",
             "version": "[5.2.9, )"
+          },
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[6.0.6, )"
           },
           "Microsoft.AspNetCore.Cors": {
             "target": "Package",

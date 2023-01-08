@@ -30,8 +30,9 @@ function actionCellRenderer(params:any)
   else
   {
   eGui.innerHTML = `
-  <button  class="col-auto btn btn-sm btn-info button"  data-action="edit" > edit  </button>
-  <button  class="col-auto btn btn-sm btn-danger button" data-action = "delete"> delete </button>`;
+  <button  class="col-auto btn btn-sm btn-success button"  data-action="edit" > Edit  </button>
+  <button  class="col-auto btn btn-sm btn-info button" data-action = "details"> Details </button>
+  <button  class="col-auto btn btn-sm btn-danger button" data-action = "delete"> Delete </button>`;
   }
 
 return eGui;
@@ -66,6 +67,7 @@ export class EmployeesComponent implements OnInit {
       {
         headerName:'Employee Id',
         field:'id',
+        maxWidth:150
       },
       {
         headerName:'First Name',
@@ -110,8 +112,8 @@ export class EmployeesComponent implements OnInit {
     this.api = params.api;
     this.columnApi = params.columnApi;
     this.api.sizeColumnsToFit();
-    params.columnApi.setColumnsVisible(true);
-    params.columnApi.setColumnsVisible(false);
+    // params.columnApi.setColumnsVisible(true);
+    // params.columnApi.setColumnsVisible(false);
     this.employeeService.GetAll(this.endpoint).subscribe((data) => {
     this.rowData = data;
     console.log(data);
@@ -138,6 +140,20 @@ export class EmployeesComponent implements OnInit {
             this.router.navigateByUrl(`/edit-employee/${this.id}`)
           );
         }
+        if(action === "details")
+        {
+          params.api.startEditingCell(
+            {
+              // rowIndex:params.node.rowIndex,
+              // colKey:params.columnApi.getDisplayedCenterColumns()[0].colId
+              // this.id   = params.node.data.id,
+              // this.router.navigateByUrl('../edit-employee',this.id)
+            },
+            this.id = params.node.data.id,
+            console.log(this.id),
+            this.router.navigateByUrl(`/employee-profile/${this.id}`)
+          );
+        }
 
         if(action === "delete")
         {
@@ -159,6 +175,7 @@ export class EmployeesComponent implements OnInit {
             this.employeeService.Delete(this.endpoint, this.id).subscribe((result) => {
             console.log(result);
             this.ngOnInit();
+            this.api.refreshCells(params);
           })
          
           );
@@ -171,7 +188,15 @@ export class EmployeesComponent implements OnInit {
         if (action === "cancel") {
           params.api.stopEditing(true);
         }
+
+        
+ 
   }
+}
+onFilterTextBoxChanged() {
+  this.api.setQuickFilter(
+    (document.getElementById('filter-text-box') as HTMLInputElement).value
+  );
 }
 
 onRowEditingStarted(params:any)

@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaderResponse, HttpHeaders } from '@angular/common/http';
 import { Observable} from "rxjs";
 import { Employee } from './employees/employees';
+import { LoginService } from './login.service';
 
 @Injectable({
   providedIn: 'root'
@@ -9,11 +10,17 @@ import { Employee } from './employees/employees';
 export class EmployeeService {
 
   mvcUrl =  'https://localhost:7256/';
-  constructor(private http:HttpClient ) { }
+  constructor(private http:HttpClient) {}
 
-  GetAll(endpoint:string):Observable<any>
-  {
-    return this.http.get<any>(this.mvcUrl + endpoint + '/GetAll');
+   headers = new HttpHeaders().set('Authorization',`Bearer ${LoginService.GetData("token")}`);
+  
+
+
+   GetAll(endpoint:string):Observable<any>
+   {
+    
+    console.log(this.headers);
+    return this.http.get<any>(this.mvcUrl + endpoint + '/GetAll',{headers:this.headers} );
   }
   GetAllEmployee(endpoint:string,pageNo:any,size:any,sort: any):Observable<any>
   {
@@ -25,13 +32,13 @@ export class EmployeeService {
     this.mvcUrl = 'http://localhost:7256/Employee/GetAllCount';
     return this.http.get(this.mvcUrl);
   }
-  Add(endpoint:any, data:any):Observable<Employee[]>
+  Add(endpoint:any, data:any):Observable<any>
   {
     return this.http.post<any>(this.mvcUrl + endpoint + '/Create',data);
   }
   GetById(endpoint:any,id:any)
   {
-    return this.http.get<any>(this.mvcUrl+endpoint+ `/GetEmployeeById?id=${id}`)
+    return this.http.get<any>(this.mvcUrl+endpoint+ `/GetById?id=${id}`)
   }
   Delete(endpoint:any,id:any):Observable<Employee[]>
   {

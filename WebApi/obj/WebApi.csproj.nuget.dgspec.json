@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\Webapi\\WebApi.csproj": {}
+    "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\webapi\\WebApi.csproj": {}
   },
   "projects": {
     "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\Database\\Database.csproj": {
@@ -82,14 +82,14 @@
         }
       }
     },
-    "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\Webapi\\WebApi.csproj": {
+    "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\webapi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\Webapi\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\webapi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\Webapi\\WebApi.csproj",
+        "projectPath": "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\webapi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\logesh.karthik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\Webapi\\obj\\",
+        "outputPath": "C:\\Users\\logesh.karthik\\Desktop\\Github\\AngularMVC\\AngularMVC\\webapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\logesh.karthik\\AppData\\Roaming\\NuGet\\NuGet.Config"

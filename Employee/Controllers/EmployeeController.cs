@@ -3,12 +3,15 @@ using Database.Models;
 using Database.DataAccessLayer;
 using System.Net.Http.Headers;
 using Newtonsoft.Json;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Database.Controllers
 {
+    
     public class EmployeeController : Controller
     {
         string BaseUrl = "https://localhost:7031/";
+
         private readonly EmployeeDAL _employeeDAL;
         private readonly IConfiguration _configuration; 
         private readonly ILogger<EmployeeController> _logger;
@@ -24,12 +27,16 @@ namespace Database.Controllers
         public async Task<ActionResult> GetAll()
         {
             List<Employee> listEmp = new List<Employee>();
+            var token = HttpContext.Request.Headers["Authorization"].ToString().Replace("Bearer",string.Empty).TrimStart();
+
 
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri(BaseUrl);
                 client.DefaultRequestHeaders.Clear();
+
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer",token);
                 HttpResponseMessage response = await client.GetAsync("api/ApiEmployee/GetAll");
 
                 if(response.IsSuccessStatusCode)
@@ -42,6 +49,9 @@ namespace Database.Controllers
         }
 
         [HttpGet]
+        
+
+        [HttpGet]
         [Route("employee/getcount")]
         public JsonResult getall()
         {
@@ -50,7 +60,7 @@ namespace Database.Controllers
         }
 
         [HttpGet]
-        [Route("Employee/GetEmployeeById")]
+        [Route("Employee/GetById")]
         public IActionResult Details(int? id)
         {
             Employee employee = _employeeDAL.GetEmployeeById(id);
