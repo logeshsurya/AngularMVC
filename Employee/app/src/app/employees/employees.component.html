@@ -94,7 +94,7 @@
             </div>   
 </div>  -->
 
-
+<script src="fakeServer.js"></script>
 
 <div class="container tablecontainer">
     <div class="container container-fluid">
@@ -109,7 +109,7 @@
         <br>
         <ag-grid-angular 
         class="ag-theme-alpine" 
-     
+        [modules]="modules"
         [columnDefs]="columnDefs"
         [defaultColDef]="defaultColDef"
         [enableRangeSelection]="true"
@@ -123,8 +123,13 @@
         [rowSelection]="'multiple'" 
         [animateRows]="true"
         [pagination]="true"
+        [paginationPageSize]="paginationPageSize"
+        [cacheBlockSize]="cacheBlockSize"
+        [serverSideDatasource]="serverSideDatasource"
         [cacheQuickFilter]="true"
-        [paginationAutoPageSize]="true"
+        [rowModelType]="rowModelType"
+        [serverSideStoreType]="serverSideStoreType"
+      
         >
     </ag-grid-angular>
     </div>

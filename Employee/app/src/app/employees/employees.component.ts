@@ -1,13 +1,19 @@
 import { Component,OnInit} from '@angular/core';
 import { EmployeeService } from 'src/app/employee.service';
 import { PaginationService } from 'src/app/pagination.service';
-import { ColDef,GridApi,ColumnApi, Grid, CellClickedEvent, GetRowIdFunc, GetRowIdParams, RowNode,ValueGetterParams,ValueSetterParams, Module, ClientSideRowModelSteps } from 'ag-grid-community';
+import { ColDef,GridApi,ColumnApi, IServerSideDatasource,IServerSideGetRowsRequest,Grid, CellClickedEvent, GetRowIdFunc, GetRowIdParams,
+         RowNode,ValueGetterParams,ValueSetterParams, Module, ClientSideRowModelSteps,GridReadyEvent,ServerSideStoreType } from '@ag-grid-community/core';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import {ICellRendererAngularComp} from 'ag-grid-angular';
 import {ICellRendererParams} from "ag-grid-community";
 import {ClientSideRowModelModule } from "@ag-grid-community/client-side-row-model";
 import {RangeSelectionModule} from "@ag-grid-enterprise/range-selection"
+import { ServerSideRowModelModule } from '@ag-grid-enterprise/server-side-row-model';
+import { RowGroupingModule } from '@ag-grid-enterprise/row-grouping';
+import { DataSource } from '@angular/cdk/collections';
+declare var FakeServer:any;
+
 
 function actionCellRenderer(params:any)
 {
@@ -47,13 +53,28 @@ return eGui;
 export class EmployeesComponent implements OnInit {
   endpoint = 'Employee';
   id: any;
+
+
+  public paginationPageSize;
+  public cacheBlockSize;
+
+  public modules:any= [
+    ServerSideRowModelModule,
+    RowGroupingModule,
+  ];
+
   public api!: GridApi;
   public columnApi!: ColumnApi;
 
   // public modules:Module[]= [ClientSideRowModelModule,RangeSelectionModule]
-  public columnDefs: ColDef[];
+  public columnDefs: any;
   public defaultColDef: any;
   public rowData:any[]=[];
+  public rowModelType: any;
+  public serverSideDatasource:any;
+  public serverSideStoreType:any;
+ 
+
 
   constructor
   (
@@ -101,6 +122,10 @@ export class EmployeesComponent implements OnInit {
         sortable:true,
         resizable:true
     }; 
+    this.serverSideStoreType= 'partial';
+    this.rowModelType = 'serverSide';
+    this.paginationPageSize = 5;
+    this.cacheBlockSize = 5;
   }
 
   ngOnInit(): void
@@ -116,9 +141,21 @@ export class EmployeesComponent implements OnInit {
     // params.columnApi.setColumnsVisible(false);
     this.employeeService.GetAll(this.endpoint).subscribe((data) => {
     this.rowData = data;
+    var seq = 1;
+    data.forEach(function (item: any) {
+      item.id = seq++;
+    });
+    var fakeServer = FakeServer(data);
+    var datasource = getServerSideDatasource(fakeServer) ;
+    params.api.setServerSideDatasource(datasource);
+    this.serverSideDatasource = datasource;
     console.log(data);
     });
+    
+    
   }
+
+
   
   onCellClicked (params:any){
 
@@ -224,6 +261,36 @@ clearSelection()
     this.api.deselectAll();
   }
 }
+
+function getServerSideDatasource(server:any)
+{
+  return {
+    getRows:function (params:any) 
+    {
+      console.log('[Datasource] - rows requested by grid:',params.request);
+      var response = server.getData(params.request);
+      setTimeout(function () 
+      {
+        if(response.success)
+        {
+          // params.successCallback(response.rows,response.lastRow);
+          params.success(
+            {
+              rowData:response.rows,
+              rowCount:response.lastRow,
+            }
+          );
+        }
+        else{
+          params.fail();
+        }
+      },200);
+    },
+  };
+}
+
+
+
 
 
 

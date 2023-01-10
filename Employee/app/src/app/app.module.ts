@@ -34,10 +34,12 @@ import { ToastrModule } from 'ngx-toastr';
 import { ModuleRegistry } from '@ag-grid-community/core';   
 import { ClientSideRowModelModule } from "@ag-grid-community/client-side-row-model";
 import {RangeSelectionModule} from "@ag-grid-enterprise/range-selection";
+import{ServerSideRowModelModule} from"@ag-grid-enterprise/server-side-row-model";
 
 ModuleRegistry.registerModules([
   ClientSideRowModelModule,
-  RangeSelectionModule
+  RangeSelectionModule,
+  ServerSideRowModelModule
 ]);
 
 @NgModule({

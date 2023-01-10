@@ -98,8 +98,8 @@ app.UseCors(x => x
 .AllowAnyHeader());
 
 app.UseHttpLogging();
-app.UseAuthorization();
 app.UseAuthentication();
+app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
